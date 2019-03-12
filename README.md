@@ -26,13 +26,13 @@ CREATE TABLE expense (
 
 
 Project Requirements:
-- Users can log in and sign out of the application
+- Users can log in and sign out of the application (User Authentication)
 - Users can record information about their daily expenses
 - Users can edit their expense records
 - Users can delete their expense records
 - Users can view a monthly report of their spending habits
 - Users can view records of all their expenses (by date)
 - Users can view records of all their expenses (by category)
-- Users should not be able to enter, edit, or delete expense records for other users
+- Users should not be able to enter, edit, or delete expense records for other users (User Authorization)
 - Internet support (web app)
 - Mobile support (native android app)
