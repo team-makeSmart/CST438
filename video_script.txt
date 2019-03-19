@@ -25,3 +25,9 @@ budget tracking app, so that users not only track their expenses, but they can a
 in alignment with their goals. Another possibility one of my team members had was that this could become a production scheduling app. in this case
 that an algorithm would be used to predict expenses for the following month. So as you can see, using the agile methodology, 
 there is a lot of directions that we can expand into by using an expense tracker as the core application.
+
+## mobile app introduction
+
+here I wanted to show a quick introduction to the android app component of our project. I decided to go with an android native app because I have some experience in android development already and since this is such a short course I would rather focus my energy building the android app and adding on additional features rather than trying to learn Xamarin and C# from scratch and trying to get just the basic app working in time
+
+so here we have the main screen that shows all the users recent expenses, you can see that each expense has a description, category, and date associated with at, along with of course the dollar amoung for the expense. Clicking the plus button on the bottom right will bring up a new screen where users can add new expenses.  So thats the basic design for the mobile app right now, as we progress along in the course we will see what additional features we have time to add on, but for now this is the minimum viable product.
