@@ -28,7 +28,7 @@ User tries to use the mobile app to save a new expense, but is not connected to 
 
 # 3
 
-User wants to see where they are spending the greatest amount of money each month
+User uses the web app to see where they are spending the greatest amount of money each month
 
 1. User selects the button to show their monthly report
 2. Data is then aggragated by category to show total amounts for each category
