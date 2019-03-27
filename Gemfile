@@ -41,7 +41,7 @@ end
 
 group :production do
   # make sure the following gems are in your production group:
-  # gem 'pg'              # use PostgreSQL in production (Heroku)
+  gem 'pg'              # use PostgreSQL in production (Heroku)
   gem 'rails_12factor'  # Heroku-specific production settings
 end
 
