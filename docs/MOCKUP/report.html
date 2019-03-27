@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Expense Tracker</title>
+
+    <!-- ********************************* BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- ********************************* REGULAR CSS -->
+    <style media="screen">
+      body {background-color: #F5F5F5;}
+
+      .pre1{
+        color: coral;
+        font-size: 25px;
+      }
+      .pre2{
+        color: coral;
+        font-size: 13px;
+      }
+      table{
+          border: 2px solid black;
+          margin-left: 15%;
+      }
+      tr, th, td {
+          background-color: white;
+                  border: 2px solid black;
+      }
+      th{
+        color: black;
+        font-weight: bold;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+
+    <!-- ********************************* NAVIGATION BAR -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Expense Tracker</a>
+        <button type="button" name="button">Input</button>
+        <button type="button" name="button">Reports</button>
+        <button type="button" name="button">Logout</button>
+      </nav>
+    </div>
+
+    <!-- ********************************* MAIN CONTENTS -->
+    <pre class="pre1">
+
+    REPORT and RECORD MANAGEMENT
+
+    DISPLAY OF ALL RECORDS (CLICK HEADERS TO FILTER OR SORT)
+    </pre>
+    <pre class="pre2">
+    <table>
+          <tr>
+          <th>AMOUNT  </th>
+          <th>DATE     </th>
+          <th>CATEGORY </th>
+          <th>DESCRIPTION </th>
+          <th>UPDATE </th>
+          <th>DELETE </th>
+        </tr>
+        <tr><td>$80.00</td><td>03-01-19</td><td>Health/Fitness</td><td>Treadmill for house.</td><td>  []</td><td>  []</td></tr>
+        <tr><td>$76.16</td><td>03-02-19</td><td>Car</td><td>Waterpump</td><td>  [] </td><td>  []</td></tr>
+        <tr><td>$43.00</td><td>03-06-19</td><td>Entertainment</td><td>Movies for two</td><td>  []</td><td>  []</td></tr>
+        <tr><td>$25.00</td><td>03-07-19</td><td>Food</td><td>Girlscout Cookies</td><td>  []</td><td>  []</td></tr>
+        <tr><td>$57.10</td><td>03-11-19</td><td>Entertainment</td><td>Stephen King Books</td><td>  []</td><td>  []</td></tr>
+      </table>
+
+
+                 <button type="button" class="btn-primary" name="button">ENTER CHANGES</button>
+
+
+    </pre>
+
+  </body>
+</html>
