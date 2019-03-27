@@ -1,0 +1,36 @@
+# 1
+
+User uses the web app to record an expense but doesn't fill in all the required information
+
+1. User selects the designated button on the web app to add a new expense record
+2. User fills in the necessary some of the necessary information about the expense   (description, category, date) but accidently leaves the amount feild blank
+3. User hits button to save expense
+4. An error appears telling the user that the amount field cannot be left blank
+5. User enters an amount into the amount field
+6. User hits button to save expense
+7. A new expense record with all the entered information is added to the database
+8. The list of expenses is refreshed to include the new expense
+
+# 2
+
+User tries to use the mobile app to save a new expense, but is not connected to the internet
+
+1. User selects the button to add a new expense record
+2. User fills out all the necessary information (description, category, date, amount)
+3. User hits the save button
+4. An error appears telling the user that they are not connected to the internet, and to try again later
+5. User turns on their mobile data and is now connected to the internet
+6. User repeats steps 2 & 3
+7. Mobile app sends a POST request to the web application
+8. Web application reads in the submitted data and enters a new record into the database
+9. Mobile app needs to refresh the lists of expenses, so it sends a GET request to the web application
+10. The list of expenses is refreshed with the data from new GET request
+
+# 3
+
+User uses the web app to see where they are spending the greatest amount of money each month
+
+1. User selects the button to show their monthly report
+2. Data is then aggragated by category to show total amounts for each category
+3. Total amounts for each category for the month are shown, sorted by $ amount (greatest to least)
+4. Viewing the report, the user can see that they are spending the most money each month on rent, followed by groceries, followed by dining out

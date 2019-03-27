@@ -1,0 +1,40 @@
+# Jake
+
+## end users
+the ideal end users for this application are pretty diverse.
+this app would be suitable for anyone who is interested in keeping track of how they are spending their money
+so someone who might use this app would be a college student who doesnt have a lot of extra money to spend
+so they need to make sure to make wise financial decisions
+or it could be a mother who might have a bit more money but make sure she is spending it in the right place
+or maybe it could be a small business owner that needs to make sure that they are not making an unnessesary expenses
+
+## why this app is ideal for this project
+
+the reason why i think this application is ideal for this project is that it is very perfectly suited for all the project requirments.
+first because its an expense tracking app obviously there clearly needs to be some sort of internal database to keep track of all the
+expenses which was one of the first requirements for the project. second is that all the expenses are unique to each individual user so
+it makes sense that there will be a sign in feature in our app which was the second project requirement. finally, we would expect that users
+would want to be able to track their expenses on the go, so we will be also creating an android mobile application to fulfill the mobile requirement
+of this project.
+
+the final reason why i think this application is great for this project is that because this class focuses on agile programming and
+this kind of application has a lot of opportunities for growth. After the main app is completed their are many new features we could start 
+adding on. For example, we could add more advanced reporting features to the monthly expense report, maybe we could use data visualization 
+to show a chart in the report so that users could visualize how they are spending their money. Maybe we could turn this application into a 
+budget tracking app, so that users not only track their expenses, but they can also set spending goals and see how close their spending is
+in alignment with their goals. Another possibility one of my team members had was that this could become a production scheduling app. in this case
+that an algorithm would be used to predict expenses for the following month. So as you can see, using the agile methodology, 
+there is a lot of directions that we can expand into by using an expense tracker as the core application.
+
+## mobile app introduction
+
+here I wanted to show a quick introduction to the android app component of our project. I decided to go with an android native app 
+because I have some experience in android development already and since this is such a short course I would rather focus my energy 
+building the android app and adding on additional features rather than trying to learn Xamarin and C# from scratch and trying to get
+just the basic app working in time
+
+so here we have the main screen that shows all the users recent expenses, you can see that each expense has a 
+description, category, and date associated with at, along with of course the dollar amoung for the expense. 
+Clicking the plus button on the bottom right will bring up a new screen where users can add new expenses.  
+So thats the basic design for the mobile app right now, as we progress along in the course we will see what additional 
+features we have time to add on, but for now this is the minimum viable product.

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Expense Tracker</title>
+
+    <!-- ********************************* BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- ********************************* REGULAR CSS -->
+    <style media="screen">
+      body {background-color: #F5F5F5;}
+
+      .pre1{
+        color: coral;
+        font-size: 25px;
+      }
+      .pre2{
+        color: coral;
+        font-size: 18px;
+      }
+    </style>
+
+
+  </head>
+  <body>
+
+    <!-- ********************************* NAVIGATION BAR -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Expense Tracker</a>
+        <button type="button" name="button">Input</button>
+        <button type="button" name="button">Reports</button>
+        <button type="button" name="button">Logout</button>
+      </nav>
+    </div>
+
+    <!-- ********************************* MAIN CONTENTS -->
+    <pre class="pre1">
+
+    INPUT YOUR EXPENSE!
+    RECORD ENTRY
+    </pre>
+    <pre class="pre2">
+
+        Amount:  <input type="text" name="" value="$15.32">
+
+        Date:    <input type="text" name="" value="03-12-18">
+
+        Category:
+        <select>
+          <option value="">Charitable</option>
+          <option value="">Work</option>
+          <option value="">Entertainment</option>
+          <option value="">Medical</option>
+          <option value="">Health/Fitness</option>
+          <option value="">Misc</option>
+        </select>
+
+        Description:
+        <textarea rows="5" cols="40" placeholder="Donated to XYZ charity."></textarea>
+
+        <button type="button" name="button" class="btn-primary">ENTER RECORD</button>
+
+
+
+    </pre>
+
+  </body>
+</html>
