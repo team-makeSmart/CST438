@@ -13,7 +13,15 @@ pertinent information regarding their data.
 The technologies to implement the program will be Javascript, an HTTP server, a database of some kind, Ruby 
 and more to be determined.
 
-The is project also managed through PivotalTracker: https://www.pivotaltracker.com/n/projects/2318433
+PivotalTracker for Agile Management of Project: 
+https://www.pivotaltracker.com/n/projects/2318433
+
+Github Repository for Project:         
+https://github.com/team-makeSmart/CST438
+
+Docs Folder:  
+Contains all miscellaneous files for project.
+
 
 Below are the primary fields of the Database:
 
@@ -31,7 +39,7 @@ CREATE TABLE expense (
 );
 
 
-Project Requirements:
+Initial Project Requirements:
 - Users can log in and sign out of the application (User Authentication)
 - Users can record information about their daily expenses
 - Users can edit their expense records
