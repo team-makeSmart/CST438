@@ -20,15 +20,15 @@ and more to be determined.
 
 2.) Navigate into the repository (This is also known as the root folder) 
 
-3.) Comment out pg gem
+3.) (This step only if deploying from Cloud9 AWS) Comment out " gem 'pg' " in Gemfile and save Gemfile
 
 4.) $ bundle install   // Installs all gems on your local system
 
-5.) $ rails db:migrate // Initialize or migrate the database  
+5.) $ rails db:migrate // (optional) to re-initialize or migrate the database  
 
 6.) $ rails server     // Start the rails server
 
-7.) ...
+7.) Navigate to the page using a browser (This will depend on your platform) 
 
 
 
