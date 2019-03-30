@@ -1,0 +1,11 @@
+- provide(:title, "Log In")
+
+.wrapper
+  %h1 Log in
+  = bootstrap_form_for(:session, url: login_path) do |f|
+    = f.text_field :username
+    = f.password_field :password
+    .d-inline
+      = f.submit "Log in", class: "btn btn-primary"
+      .margin_small_inline New user?
+      %span.reference #{link_to "Sign up now!", signup_path}

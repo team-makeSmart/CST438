@@ -50,4 +50,4 @@ Initial Project Requirements:
 - Users should not be able to enter, edit, or delete expense records for other users (User Authorization)
 - Internet support (web app)
 - Mobile support (native android app)
->>>>>>> e4161aeca2bb0337ac05694eed6e55e45c6a4ffd
+
