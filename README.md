@@ -49,7 +49,7 @@ Contains all miscellaneous files for project.
 
 **************** BELOW ARE EXTERNAL REFERENCE RESOURCES FOR DEVELOPMENT ****
 
-Website that converts html/erb to haml syntax
+Website that converts html/erb to haml syntax:
 https://awsm-tools.com/code/html2haml
 
 
