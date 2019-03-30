@@ -13,8 +13,8 @@ pertinent information regarding their data.
 The technologies to implement the program will be Javascript, an HTTP server, a database of some kind, Ruby 
 and more to be determined.
 
-****************
-**************** INSTALLATION INSTRUCTIONS *
+
+**************** INSTALLATION INSTRUCTIONS *********************************
 
 1.) In command line, clone this repository to your local computer
 2.) Navigate into the repository (This is also known as the root folder) 
@@ -25,8 +25,8 @@ and more to be determined.
 7.) ...
 
 
-****************
-**************** PROJECT DEVELOPMENT IS MANAGED WITH THE FOLLOWING *
+
+**************** PROJECT DEVELOPMENT IS MANAGED WITH THE FOLLOWING *********
 
 PivotalTracker for Agile Management of Project: 
 https://www.pivotaltracker.com/n/projects/2318433
@@ -38,8 +38,8 @@ Docs Folder:
 Contains all miscellaneous files for project.
 
 
-****************
-**************** BELOW ARE EXTERNAL REFERENCE RESOURCES FOR DEVELOPMENT *
+
+**************** BELOW ARE EXTERNAL REFERENCE RESOURCES FOR DEVELOPMENT ****
 
 Website that converts html/erb to haml syntax
 https://awsm-tools.com/code/html2haml
@@ -47,8 +47,8 @@ https://awsm-tools.com/code/html2haml
 
 
 
-*****************
-**************** BELOW IS MISCELLEOUS INFORMATION (FOR REFERENCE) *
+
+**************** BELOW IS MISCELLEOUS INFORMATION (FOR REFERENCE) **********
 
 Below are the primary fields of the Database:
 
