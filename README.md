@@ -17,11 +17,17 @@ and more to be determined.
 **************** INSTALLATION INSTRUCTIONS *********************************
 
 1.) In command line, clone this repository to your local computer
+
 2.) Navigate into the repository (This is also known as the root folder) 
+
 3.) Comment out pg gem
+
 4.) $ bundle install   // Installs all gems on your local system
+
 5.) $ rails db:migrate // Initialize or migrate the database  
+
 6.) $ rails server     // Start the rails server
+
 7.) ...
 
 
@@ -31,8 +37,10 @@ and more to be determined.
 PivotalTracker for Agile Management of Project: 
 https://www.pivotaltracker.com/n/projects/2318433
 
+
 Github Repository for Project:         
 https://github.com/team-makeSmart/CST438
+
 
 Docs Folder:  
 Contains all miscellaneous files for project.
