@@ -34,7 +34,7 @@ and more to be determined.
 
 **************** PROJECT DEVELOPMENT IS MANAGED WITH THE FOLLOWING *********
 
-PivotalTracker for Agile Management of Project: 
+PivotalTracker for Agile Management of Project:
 https://www.pivotaltracker.com/n/projects/2318433
 
 
