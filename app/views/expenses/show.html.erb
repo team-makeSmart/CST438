@@ -1,0 +1,54 @@
+<% provide(:title, "Show Expense") %>
+<% if @expense.user.id != current_user.id %>
+  <h1>Action Not Permitted</h1>
+  <h2>For Current User</h2>
+<% else %>
+
+  <h1>Expense $<%= @expense.amount %></h1>
+
+
+  <div style=" margin:auto;" class="center">
+
+    <% if @first_time %>
+      <h3>No records yet</h3>
+      <a class="btn btn-warning" href="/">back</a>
+      <a class="btn btn-success" href=" <%= new_expense_path %>">new expense</a>
+      </div>
+    <% else %>
+      <% if current_user %>
+        <table id="customers">
+          <thead>
+          <tr>
+            <th>User</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Created</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+
+            <% if @expense.user.username == current_user.username %>
+              <td><%= @expense.user.username %></td>
+              <td><%= @expense.amount %></td>
+              <td><%= @expense.category %></td>
+              <td><%= @expense.description %></td>
+              <td><%= time_ago_in_words(@expense.created_at) %> ago</td>
+
+            <% end %>
+          </tr>
+      <% end %>
+
+    <% end %>
+
+    </tbody>
+    </table>
+    <br>
+
+    <div style="float:left; ">
+      <a style="color:blue" class="btn btn-default" href=" <%= expenses_path %>">back</a>
+      <a style="color:blue" class="btn btn-default" href=" <%= edit_expense_path(@expense) %>">edit</a>
+
+    </div>
+<% end %>

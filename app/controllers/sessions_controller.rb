@@ -1,5 +1,13 @@
 class SessionsController < ApplicationController
+
+
+
   def new
+    if !current_user.nil?
+      flash[:danger] = 'action not permitted'
+      redirect_to root_url
+    end
+
   end
 
   def create

@@ -12,4 +12,5 @@ Rails.application.routes.draw do
 
   # get 'static_pages/home'
   resources :users
+  resources :expenses
 end

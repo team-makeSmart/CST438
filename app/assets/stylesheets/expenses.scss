@@ -1,0 +1,51 @@
+// Place all the styles related to the Expenses controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width:200px;
+
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+#customers td a{
+  color:blue;
+}
+
+#customers td a:hover{
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color:#17a2b8;
+  color: white;
+  text-align: center;
+}
+
+#left a{
+  float:left;
+  color:blue;
+}
+
+#inline a{
+  color:white;
+
+}
