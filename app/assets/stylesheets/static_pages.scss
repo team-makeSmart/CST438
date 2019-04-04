@@ -1,3 +1,39 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.column-left {
+  float: left;
+  width: 30.333%;
+}
+
+.column-right {
+  float: right;
+  width: 30.333%;
+}
+
+.column-center {
+  display: inline-block;
+  width: 30.333%;
+  margin-left: 42px
+}
+
+.expenses-tabs {
+  border-radius: 3px;
+  background-color: #eee;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 300;
+  padding: 30px;
+}
+
+a.expenses-tabs {
+  box-shadow: 1px 1px 2px #888888;
+  text-align: center;
+}
+
+a.expenses-tabs:hover {
+  background-color: #eee;
+  color: #66666d;
+  text-decoration: none;
+  box-shadow: 0px 0px 0px #888888;
+
+}

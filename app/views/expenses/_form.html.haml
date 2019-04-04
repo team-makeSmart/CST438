@@ -1,0 +1,10 @@
+.wrapper
+
+  -#= current_user.id
+  = bootstrap_form_for(@expense) do |f|
+    = f.hidden_field :user_id, {:value => current_user.id}
+    = f.text_field :amount
+    = f.text_field :category
+    = f.text_area :description
+    .actions
+      = f.submit

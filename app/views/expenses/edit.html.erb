@@ -1,0 +1,11 @@
+<% provide(:title, "Edit Expense") %>
+<% if @expense.user.id != current_user.id %>
+  <h1>Action Not Permitted</h1>
+  <h2>For Current User</h2>
+<% else %>
+
+  <h1>Editing Expense</h1>
+
+  <%= render 'form', expense: @expense %>
+
+<% end %>
