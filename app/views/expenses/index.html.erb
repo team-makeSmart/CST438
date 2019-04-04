@@ -41,7 +41,7 @@
 
             <% if expense.user.username == current_user.username %>
               <td ><%= expense.user.username %></td>
-              <td><%= expense.amount %></td>
+              <td><%= number_to_currency expense.amount %></td>
               <td><%= expense.category %></td>
               <td><%= expense.description %></td>
               <td><%= time_ago_in_words(expense.created_at) %> ago </td>
