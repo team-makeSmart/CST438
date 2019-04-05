@@ -1,15 +1,17 @@
 class UsersController < ApplicationController
 
+
   def index
     @users = User.all
   end
 
   def new
-    if !current_user.nil?
-      flash[:danger] = 'action not permitted'
-      redirect_to root_url
+    if !current_user
+      @user = User.new
+    else
+      flash[:danger] = 'Not permitted'
+      redirect_to root_path
     end
-    @user = User.new
   end
 
   def show
@@ -17,12 +19,11 @@ class UsersController < ApplicationController
   end
 
   def create
-
     @user = User.new(user_params)
     respond_to do |format|
       if @user.save
         log_in @user
-        flash[:success] = "Welcome to Expense Tracker "+ @user.username
+        flash[:success] = "Welcome to Expense Tracker " + @user.username
         format.html {redirect_to root_path}
         format.json {render :show, status: :created, location: @user}
       else
