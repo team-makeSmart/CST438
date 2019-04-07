@@ -6,9 +6,7 @@ class ExpenseTest < ActiveSupport::TestCase
   # end
   def setup
     @expense = expenses(:one)
-    @user = users(:one)
-    # This code is not idiomatically correct.
-    @expense = @user.expenses.build(amount: @expense.amount, category: @expense.category, description: @expense.description, user_id: @expense.user_id)
+    @expense = Expense.new(amount: @expense.amount, category: @expense.category, description: @expense.description, user_id: @expense.user_id)
   end
 
   test "should be valid" do

@@ -1,9 +1,9 @@
 class User < ApplicationRecord
-  validates :username, presence: true, length: { maximum: 50 }, uniqueness: true
-  validates :password_digest, presence: true, length: { minimum: 6 }
-  validates :password, presence: true, length: { minimum: 6 }
+  validates :username, presence: true, length: {maximum: 50}, uniqueness: true
+  validates :password_digest, presence: true, length: {minimum: 6}
+  validates :password, presence: true, length: {minimum: 6}
   has_secure_password
-  has_many :expenses
+  has_many :expenses, dependent: :destroy
 
   def User.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :

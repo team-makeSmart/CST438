@@ -11,3 +11,6 @@ two:
 John:
   username: someUser
   password_digest: <%= User.digest('password') %>
+
+
+
