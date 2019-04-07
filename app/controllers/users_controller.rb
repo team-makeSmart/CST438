@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     if !current_user
       @user = User.new
     else
-      flash[:danger] = 'Not permitted'
+      flash[:danger] = 'Not permitted, log out first'
       redirect_to root_path
     end
   end
