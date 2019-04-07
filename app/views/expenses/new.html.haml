@@ -2,5 +2,7 @@
 .wrapper
   %h1 New Expense
   = render 'form', expense: @expense
-  
-   <div id="left"><a class="btn btn-default" href=" /">MAIN MENU</a> <a class="btn btn-default" href="/expenses">VIEW ALL</a></div>
+
+  #left
+    %a.btn.btn-default{:href => " /"} MAIN MENU
+    %a.btn.btn-default{:href => "/expenses"} VIEW ALL
