@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   # get 'static_pages/home'
   resources :users
   resources :expenses
+  
+  # for json api requests
+  get 'api/:username' => 'users#expenses_json'
 end
