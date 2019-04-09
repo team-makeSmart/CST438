@@ -21,8 +21,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
 
   test "login with valid information" do
     get login_path
-    post login_path, params: {session: {username: @user.username,
-                                        password_digest: 'password'}}
+    post login_path, params: {session: {username: @user.username, password_digest: 'password'}}
 
 
     assert_template 'sessions/new'
