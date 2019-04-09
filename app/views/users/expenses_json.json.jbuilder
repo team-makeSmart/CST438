@@ -1,1 +1,1 @@
-json.array! @expenses, :amount, :category, :description
+json.array! @expenses, :amount, :category, :description, :created_at
