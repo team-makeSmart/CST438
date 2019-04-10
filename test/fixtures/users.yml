@@ -12,5 +12,6 @@ John:
   username: someUser
   password_digest: <%= User.digest('password') %>
 
-
-
+three:
+  username: MyString
+  password_digest: <%= User.digest('password') %>

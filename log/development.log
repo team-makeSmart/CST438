@@ -28355,3 +28355,313 @@ Processing by UsersController#expenses_json as JSON
 Completed 200 OK in 477ms (Views: 147.2ms | ActiveRecord: 25.3ms)
 
 
+Started GET "/" for ::1 at 2019-04-09 12:56:00 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_shim.html.erb (1.8ms)
+  Rendered layouts/_header.html.erb (8.2ms)
+Completed 200 OK in 1165ms (Views: 1149.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for ::1 at 2019-04-09 12:56:04 -0700
+Processing by ExpensesController#index as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-04-09 12:56:04 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (156.1ms)
+  Rendered layouts/_shim.html.erb (3.0ms)
+  Rendered layouts/_header.html.erb (22.9ms)
+Completed 200 OK in 1402ms (Views: 1391.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-04-09 12:56:14 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tBoRTog26O3iXPaJxRBoRScCzZMZskBqkvLXw0NfyyRtQHdyV2PSViuIQZbfREDfcs06AOu9URHtVspE4gTGzQ==", "session"=>{"username"=>"firstUser", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "firstUser"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 294ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:56:14 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_shim.html.erb (10.1ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (39.3ms)
+Completed 200 OK in 1271ms (Views: 1240.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/expenses/new" for ::1 at 2019-04-09 12:56:17 -0700
+Processing by ExpensesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendering expenses/new.html.haml within layouts/application
+  Rendered expenses/_form.html.haml (218.7ms)
+  Rendered expenses/new.html.haml within layouts/application (330.5ms)
+  Rendered layouts/_shim.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (8.9ms)
+Completed 200 OK in 1800ms (Views: 1624.1ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:56:22 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+Started GET "/expenses" for ::1 at 2019-04-09 12:56:23 -0700
+Processing by ExpensesController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mExpense Load (1.7ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ? ORDER BY "expenses"."created_at" DESC[0m  [["user_id", 35]]
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mExpense Load (1.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mCACHE (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mCACHE (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  Rendered layouts/_shim.html.erb (1.7ms)
+  [1m[36mCACHE (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mCACHE (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendered expenses/index.html.erb within layouts/application (824.6ms)
+  Rendered layouts/_header.html.erb (31.7ms)
+Completed 200 OK in 2084ms (Views: 2063.0ms | ActiveRecord: 0.8ms)
+
+
+  Rendered layouts/_shim.html.erb (11.7ms)
+  Rendered layouts/_header.html.erb (16.9ms)
+Completed 200 OK in 2372ms (Views: 2230.6ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/expenses/new" for ::1 at 2019-04-09 12:56:29 -0700
+Processing by ExpensesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendering expenses/new.html.haml within layouts/application
+  Rendered expenses/_form.html.haml (302.0ms)
+  Rendered expenses/new.html.haml within layouts/application (441.5ms)
+Started GET "/" for ::1 at 2019-04-09 12:56:31 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_shim.html.erb (2.5ms)
+  Rendered layouts/_header.html.erb (19.9ms)
+Completed 200 OK in 2145ms (Views: 2101.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:56:32 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (15.2ms)
+Started GET "/expenses" for ::1 at 2019-04-09 12:56:32 -0700
+Processing by ExpensesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mExpense Load (1.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ? ORDER BY "expenses"."created_at" DESC[0m  [["user_id", 35]]
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mExpense Load (1.4ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mCACHE (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  Rendered expenses/index.html.erb within layouts/application (845.4ms)
+Started GET "/expenses/20/edit" for ::1 at 2019-04-09 12:56:34 -0700
+Processing by ExpensesController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mExpense Load (1.7ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" WHERE "expenses"."id" = ? ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendering expenses/edit.html.erb within layouts/application
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendered layouts/_shim.html.erb (2.4ms)
+  Rendered expenses/_form.html.haml (239.8ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendered expenses/edit.html.erb within layouts/application (366.1ms)
+  Rendered layouts/_header.html.erb (34.5ms)
+Completed 200 OK in 3664ms (Views: 3637.6ms | ActiveRecord: 0.9ms)
+
+
+  Rendered layouts/_shim.html.erb (2.2ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (28.9ms)
+Completed 200 OK in 5263ms (Views: 5233.6ms | ActiveRecord: 1.0ms)
+
+
+  Rendered layouts/_shim.html.erb (3.0ms)
+  Rendered layouts/_header.html.erb (18.6ms)
+Completed 200 OK in 5662ms (Views: 5579.8ms | ActiveRecord: 8.6ms)
+
+
+  Rendered layouts/_shim.html.erb (2.4ms)
+  Rendered layouts/_header.html.erb (13.0ms)
+Completed 200 OK in 4567ms (Views: 4463.2ms | ActiveRecord: 3.1ms)
+
+
+Started PATCH "/expenses/20" for ::1 at 2019-04-09 12:56:42 -0700
+Processing by ExpensesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pKytX+lhUQS8AvrberO5OfPHTc7REvVPDKsSlJwGY6kW6RBd3DPcwXuWE6qHuzUhxp7YUQBJgiTLDmEujQhsCQ==", "expense"=>{"user_id"=>"35", "amount"=>"345.0", "category"=>"dfgds4", "description"=>"sdfgsd"}, "commit"=>"Update Expense", "id"=>"20"}
+  [1m[36mExpense Load (0.9ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" WHERE "expenses"."id" = ? ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE "expenses" SET "category" = ?, "updated_at" = ? WHERE "expenses"."id" = ?[0m  [["category", "dfgds4"], ["updated_at", "2019-04-09 19:56:42.336220"], ["id", 20]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/expenses/20
+Completed 302 Found in 194ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/expenses/20" for ::1 at 2019-04-09 12:56:42 -0700
+Processing by ExpensesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mExpense Load (1.1ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" WHERE "expenses"."id" = ? ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendering expenses/show.html.erb within layouts/application
+  [1m[36mCACHE (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendered expenses/show.html.erb within layouts/application (69.5ms)
+  Rendered layouts/_shim.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (14.8ms)
+Completed 200 OK in 1351ms (Views: 1290.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/expenses" for ::1 at 2019-04-09 12:56:48 -0700
+Processing by ExpensesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.9ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ? ORDER BY "expenses"."created_at" DESC[0m  [["user_id", 35]]
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mExpense Load (1.1ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mCACHE (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mCACHE (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mCACHE (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mCACHE (8.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mCACHE (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  Rendered expenses/index.html.erb within layouts/application (571.9ms)
+  Rendered layouts/_shim.html.erb (2.4ms)
+  Rendered layouts/_header.html.erb (7.6ms)
+Completed 200 OK in 1864ms (Views: 1791.1ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:56:56 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_shim.html.erb (14.3ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (25.9ms)
+Completed 200 OK in 1275ms (Views: 1254.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/expenses" for ::1 at 2019-04-09 12:56:59 -0700
+Processing by ExpensesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.9ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ? ORDER BY "expenses"."created_at" DESC[0m  [["user_id", 35]]
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mExpense Load (1.5ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mCACHE (8.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mCACHE (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  Rendered expenses/index.html.erb within layouts/application (689.6ms)
+  Rendered layouts/_shim.html.erb (14.7ms)
+  Rendered layouts/_header.html.erb (18.8ms)
+Completed 200 OK in 2110ms (Views: 2037.5ms | ActiveRecord: 16.7ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-04-09 12:57:06 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jtoVKluh/t28t+2EeSjjahCg96J66TBE06vr+FtfG3CweMdWxWTY3OYaVjicdz3VO3181vwwO72Pli1nYcP8Ig=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 12:57:06 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (2.3ms)
+  Rendered layouts/_header.html.erb (15.3ms)
+Completed 200 OK in 1305ms (Views: 1286.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "expenses"[0m
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC[0m
+Started GET "/login" for ::1 at 2019-04-09 20:17:42 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.haml within layouts/application
+  Rendered sessions/new.html.haml within layouts/application (169.0ms)
+  Rendered layouts/_shim.html.erb (2.4ms)
+  Rendered layouts/_header.html.erb (9.3ms)
+Completed 200 OK in 1575ms (Views: 1551.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-04-09 20:17:50 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6wm2uTB55+xU0vGAEbLymaZiMeF82DaPkwuqkQwabqgyU9CF7yzdV50GRp8L5toD863Gco7XJ/Tsr7cWrUFjQQ==", "session"=>{"username"=>"firstUser", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "firstUser"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 122ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 20:17:50 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_shim.html.erb (2.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (36.2ms)
+Completed 200 OK in 1581ms (Views: 1558.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/expenses" for ::1 at 2019-04-09 20:17:54 -0700
+Processing by ExpensesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mExpense Load (1.9ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ? ORDER BY "expenses"."created_at" DESC[0m  [["user_id", 35]]
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mExpense Load (1.5ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  Rendered expenses/index.html.erb within layouts/application (655.7ms)
+  Rendered layouts/_shim.html.erb (3.2ms)
+  Rendered layouts/_header.html.erb (8.1ms)
+Completed 200 OK in 2280ms (Views: 2202.9ms | ActiveRecord: 17.2ms)
+
+
