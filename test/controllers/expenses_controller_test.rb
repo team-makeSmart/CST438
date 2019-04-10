@@ -4,7 +4,6 @@ class ExpensesControllerTest < ActionDispatch::IntegrationTest
 
   setup do
     @expense = expenses(:one)
-    log_in_as(@expense.user)
   end
 
   def redirect_if_not_logged_in(url)

@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
 
-
   def index
     @users = User.all
   end
@@ -36,7 +35,7 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:username, :password, :password_confirmation)
   end
-  
+
   def expenses_json
     user = User.find_by username: params[:username]
     @expenses = Expense.where(user_id: user.id)

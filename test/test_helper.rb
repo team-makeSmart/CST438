@@ -18,11 +18,11 @@ class ActiveSupport::TestCase
 end
 
 
-
 class ActionDispatch::IntegrationTest
 
   def log_in_as(user)
-    post login_path, params: {session: {username: user.username, password_digest: "password"}}
+    get login_path
+    post login_path, params: {session: {username: user.username, password: 'password'}}
   end
 
 end
