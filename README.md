@@ -41,7 +41,7 @@ https://www.pivotaltracker.com/n/projects/2318433
 Github Repository for Web App:         
 https://github.com/team-makeSmart/CST438
 
-Github Repository for the Mobile App:
+Github Repository for the Mobile App:     
 https://github.com/Mcghee-Jake/ExpenseTracker
 
 Docs Folder:  
