@@ -13,13 +13,15 @@
       <table id="customers" class="sort">
         <thead>
         <tr>
+          
           <th>User</th>
           <th>Amount</th>
           <th onclick="sortText(2, 'customers')">Category</th>
           <th onclick="sortText(3, 'customers')">Description</th>
-          <th>Created</th>
+          <th onclick="sortText(7, 'customers')">Created</th>
           <th>Edit</th>
-          <th colspan="4">Delete</th>
+          <th>Delete</th>
+          <th style="display: false;"></th>  <!-- This header is the hidden expense entered date for sorting -->
         </tr>
         </thead>
 
@@ -35,9 +37,10 @@
               <td><%= expense.category %></td>
               <td><%= expense.description %></td>
               <td><%= time_ago_in_words(expense.created_at) %> ago </td>
-
               <td><%= link_to 'edit', edit_expense_path(expense) %> </td>
               <td><%= link_to 'delete', expense, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+              <!-- Below td tag is the hidden expense entered date that is needed for sorting -->
+              <td style="display: false;"><%= expense.created_at %> ago </td>
             <% end %>
           </tr>
         <% end %>
@@ -89,4 +92,5 @@
   }  // End of sort function
   
 </script>
+
 
