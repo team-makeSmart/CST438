@@ -21,7 +21,7 @@
           <th onclick="sortText(7, 'customers')">Created</th>
           <th>Edit</th>
           <th>Delete</th>
-          <th style="display: false;"></th>  <!-- This header is the hidden expense entered date for sorting -->
+          <th style="display: none;"></th>  <!-- This header is the hidden expense entered date for sorting -->
         </tr>
         </thead>
 
@@ -40,7 +40,7 @@
               <td><%= link_to 'edit', edit_expense_path(expense) %> </td>
               <td><%= link_to 'delete', expense, method: :delete, data: {confirm: 'Are you sure?'} %></td>
               <!-- Below td tag is the hidden expense entered date that is needed for sorting -->
-              <td style="display: false;"><%= expense.created_at %> ago </td>
+              <td style="display: none;"><%= expense.created_at %> ago </td>
             <% end %>
           </tr>
         <% end %>
