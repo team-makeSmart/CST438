@@ -13,7 +13,6 @@ class DashboardControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-
   test "should retrieve amount and date created at" do
     records = Expense.select(:amount, :created_at)
                   .where("created_at >= ? AND created_at <= ? ",
