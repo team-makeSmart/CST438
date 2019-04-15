@@ -7,4 +7,4 @@ Rails.application.config.assets.version = '1.1'
 Rails.application.config.assets.precompile += %w( datepicker.js )
 # Precompile additional assets.
 # application.js, application.scss, and all non-JS/CSS in app/assets folder are already added.
-# Rails.application.config.assets.precompile += %w( search.js )
+Rails.application.config.assets.precompile += %w( application.js )

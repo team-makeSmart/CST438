@@ -1316,3 +1316,124 @@ Processing by DashboardController#index as HTML
 Completed 200 OK in 223ms (Views: 218.3ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-12&commit=Search" for 127.0.0.1 at 2019-04-15 15:14:42 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-12", "commit"=>"Search"}
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses"."amount", "expenses"."created_at" FROM "expenses" WHERE ("expenses"."created_at" >= ? AND "expenses"."created_at" < ?) ORDER BY "expenses"."created_at" DESC[0m  [["created_at", "2019-04-01"], ["created_at", "2019-04-13"]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.8ms)
+Completed 200 OK in 347ms (Views: 341.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-12&commit=Search" for 127.0.0.1 at 2019-04-15 15:15:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-12", "commit"=>"Search"}
+  [1m[36mExpense Load (0.5ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses"."amount", "expenses"."created_at" FROM "expenses" WHERE ("expenses"."created_at" >= ? AND "expenses"."created_at" < ?) ORDER BY "expenses"."created_at" DESC[0m  [["created_at", "2019-04-01"], ["created_at", "2019-04-13"]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (28.7ms)
+Completed 200 OK in 1401ms (Views: 1368.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-15 15:15:05 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 235ms (Views: 231.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-04-15 15:15:06 -0700
+Processing by ExpensesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.6ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE "expenses"."user_id" = ? ORDER BY "expenses"."created_at" DESC[0m  [["user_id", 35]]
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  Rendered expenses/index.html.erb within layouts/application (64.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 311ms (Views: 300.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2019-04-15 15:15:09 -0700
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 218ms (Views: 216.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-03&to=2019-04-17&commit=Search" for 127.0.0.1 at 2019-04-15 15:15:13 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-03", "to"=>"2019-04-17", "commit"=>"Search"}
+  [1m[36mExpense Load (0.5ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses"."amount", "expenses"."created_at" FROM "expenses" WHERE ("expenses"."created_at" >= ? AND "expenses"."created_at" < ?) ORDER BY "expenses"."created_at" DESC[0m  [["created_at", "2019-04-02"], ["created_at", "2019-04-18"]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 258ms (Views: 250.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-05&to=&commit=Search" for 127.0.0.1 at 2019-04-15 15:15:21 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-05", "to"=>"", "commit"=>"Search"}
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+ArgumentError (invalid date):
+  
+app/controllers/dashboard_controller.rb:14:in `parse'
+app/controllers/dashboard_controller.rb:14:in `index'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.6ms)
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-05&to=2019-04-15&commit=Search" for 127.0.0.1 at 2019-04-15 15:15:28 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-05", "to"=>"2019-04-15", "commit"=>"Search"}
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT "expenses"."amount", "expenses"."created_at" FROM "expenses" WHERE ("expenses"."created_at" >= ? AND "expenses"."created_at" < ?) ORDER BY "expenses"."created_at" DESC[0m  [["created_at", "2019-04-04"], ["created_at", "2019-04-16"]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.6ms)
+Completed 200 OK in 256ms (Views: 251.4ms | ActiveRecord: 0.7ms)
+
+
