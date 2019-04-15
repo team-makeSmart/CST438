@@ -10,42 +10,8 @@
     </div>
   <% else %>
     <% if current_user %>
-      <table id="customers">
-        <thead>
-        <tr>
-          <th >User</th>
-          <th>Amount</th>
-          <th>Category</th>
-          <th>Description</th>
-          <th>Created</th>
-
-          <th colspan="4"></th>
-        </tr>
-        </thead>
-
-        <tbody>
-
-
-        <% @expenses.each do |expense| %>
-          <tr>
-
-            <% if expense.user.username == current_user.username %>
-              <td ><%= expense.user.username %></td>
-              <td><%= number_to_currency expense.amount %></td>
-              <td><%= expense.category %></td>
-              <td><%= expense.description %></td>
-              <td><%= time_ago_in_words(expense.created_at) %> ago </td>
-
-              <td><%= link_to 'edit', edit_expense_path(expense) %> </td>
-              <td><%= link_to 'delete', expense, method: :delete, data: {confirm: 'Are you sure?'} %></td>
-            <% end %>
-          </tr>
-        <% end %>
-
+      <%= render 'layouts/table' %>
     <% end %>
-
-  </tbody>
-  </table>
   <br>
   <div id="left"><a class="btn btn-default" href=" <%= new_expense_path %>">new expense</a></div>
 

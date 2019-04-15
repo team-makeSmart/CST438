@@ -19,9 +19,13 @@
     <%= flash[:success] = "Last expense was on #{@last_expense} " %>
 
   <% else %>
-    <div id="chartContainer"><%= @chart.render() %></div>
+    <h3>Showing Expenses from <%=@from %> to <%=@to %></h3>
+
+  <%= render 'layouts/table' %>
 
   <% end %>
+  <br>
+  <br>
 
   <%= form_tag("dashboard", id: 'formId', method: "get") do %>
     <%= label_tag(:from, "Date from:") %>
