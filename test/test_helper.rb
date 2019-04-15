@@ -12,8 +12,15 @@ class ActiveSupport::TestCase
     !session[:user_id].nil?
   end
 
-  # Add more helper methods to be used by all tests here...
 
+  def redirect_if_not_logged_in(url)
+    get url
+    if !is_logged_in?
+      assert_redirected_to login_url
+    else
+      assert_response :success
+    end
+  end
 
 end
 

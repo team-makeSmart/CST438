@@ -12,6 +12,9 @@ Rails.application.routes.draw do
 
   resources :users
   resources :expenses
+
+  get 'dashboard' =>'dashboard#index'
+
   
   # for json api requests
   get 'api/:username' => 'users#expenses_json'

@@ -15,3 +15,8 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+
+//= require fusioncharts
+//= require fusioncharts.charts
+//= require themes/fusioncharts.theme.fint
+//= require bootstrap-datepicker

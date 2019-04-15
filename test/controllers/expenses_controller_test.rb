@@ -6,14 +6,6 @@ class ExpensesControllerTest < ActionDispatch::IntegrationTest
     @expense = expenses(:one)
   end
 
-  def redirect_if_not_logged_in(url)
-    get url
-    if !is_logged_in?
-      assert_redirected_to login_url
-    else
-      assert_response :success
-    end
-  end
 
   test "should redirect to login if not logged in" do
     redirect_if_not_logged_in(expenses_url)
