@@ -38,9 +38,11 @@ PivotalTracker for Agile Management of Project:
 https://www.pivotaltracker.com/n/projects/2318433
 
 
-Github Repository for Project:         
+Github Repository for Web App:         
 https://github.com/team-makeSmart/CST438
 
+Github Repository for the Mobile App:     
+https://github.com/Mcghee-Jake/ExpenseTracker
 
 Docs Folder:  
 Contains all miscellaneous files for project.
