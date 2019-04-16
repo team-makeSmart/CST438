@@ -2,9 +2,15 @@ class DashboardController < ApplicationController
 
 
   def index
-    unless params['from'].nil? || params['to'].nil? || params['from'] == "" || params['to'] == ""
-      get_records
+    if !logged_in?
+      flash[:danger] = 'Please login first'
+      redirect_to login_path
+    else
+      unless params['from'].nil? || params['to'].nil? || params['from'] == '' || params['to'] == ''
+        get_records
+      end
     end
+
   end
 
   private
@@ -17,7 +23,7 @@ class DashboardController < ApplicationController
     if @valid
       @from = params['from']
       @to = params['to']
-      @last_expense = Expense.first.created_at.strftime("%Y-%m-%d")
+      @last_expense = Expense.first.created_at.strftime('%Y-%m-%d')
       # records = Expense.select(:amount, :created_at).where("created_at >= ? AND created_at <= ? ","#{@from} 00:00:01","#{@to} 23:59:59")
       @expenses = Expense.where(created_at: (Date.parse(@from) - 1.day)...Date.parse(@to) + 1.day)
       @empty_records = @expenses == []

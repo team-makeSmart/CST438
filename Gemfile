@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.6.0'
 
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem "bootstrap_form", ">= 4.2.0"
@@ -45,6 +44,7 @@ group :development, :test do
 end
 
 group :production do
+  ruby '2.6.0'
   # make sure the following gems are in your production group:
   gem 'pg'              # use PostgreSQL in production (Heroku)
   gem 'rails_12factor'  # Heroku-specific production settings
@@ -52,6 +52,7 @@ end
 
 
 group :development do
+  ruby '2.5.0'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
@@ -69,6 +70,6 @@ group :test do
 end
 
 gem 'font-awesome-sass', '~> 5.8.1'
-
+gem 'omniauth-twitter'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
