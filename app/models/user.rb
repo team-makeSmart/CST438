@@ -6,9 +6,28 @@ class User < ApplicationRecord
   has_many :expenses, dependent: :destroy
 
   def User.digest(string)
-    cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
-               BCrypt::Engine.cost
+    cost = if ActiveModel::SecurePassword.min_cost
+             BCrypt::Engine::MIN_COST
+           else
+             BCrypt::Engine.cost
+           end
     BCrypt::Password.create(string, cost: cost)
   end
 
+
+  # login through twitter ------------------------------------------------------
+  def self.from_omniauth(auth)
+    where(:username => auth['info']['nickname']) #|| create_from_omniauth(auth)
+  end
+
+  def self.create_from_omniauth(auth)
+    create! do |user|
+      # user.provider = auth['provider']
+      user.username = auth['info']['nickname']
+      user.password = "password"
+
+      user.password_digest = "password"
+    end
+  end
+  # ----------------------------------------------------------------------------
 end
