@@ -2,12 +2,12 @@
   <thead>
   <tr>
     <th >User</th>
-    <th>Amount</th>
-    <th>Category</th>
-    <th>Description</th>
-    <th>Created</th>
-
+    <th onclick="sortText(1,'customers')">Amount</th>
+    <th onclick="sortText(2,'customers')">Category</th>
+    <th onclick="sortText(3,'customers')">Description</th>
+    <th onclick="sortText(7,'customers')">Created</th>
     <th colspan="4"></th>
+    <th style="display: none;"></th>  <!-- This header is the hidden expense entered date for sorting -->
   </tr>
   </thead>
 
@@ -16,19 +16,23 @@
 
   <% @expenses.each do |expense| %>
     <tr>
-
+      
       <% if expense.user.username == current_user.username %>
         <td ><%= expense.user.username %></td>
         <td><%= number_to_currency expense.amount %></td>
         <td><%= expense.category %></td>
         <td><%= expense.description %></td>
-        <td><%= expense.created_at.strftime("%Y-%m-%d %H:%m") %>  </td>
-
+        <td><%= expense.created_at.strftime("%Y-%m-%d %H:%M") %>  </td>
         <td><%= link_to 'edit', edit_expense_path(expense) %> </td>
         <td><%= link_to 'delete', expense, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+        <!-- Below td tag is the hidden expense-entered-date for sorting -->
+        <td style="display: none;"><%= expense.created_at %> ago </td>
       <% end %>
     </tr>
   <% end %>
+
+  <!-- Include custom Javascript file with table sorting functions -->
+  <script type="text/javascript" src="sort.js"></script>
 
   </tbody>
 </table>
