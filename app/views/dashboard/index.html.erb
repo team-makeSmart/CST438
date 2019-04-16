@@ -1,0 +1,45 @@
+<% provide(:title, "Expenses by Date") %>
+
+
+<div class="modal-body center">
+
+  <% if !@valid %>
+  <%= flash[:success] = "Invalid Date Format, please try again " %>
+
+  <% elsif @from == "" || @to == "" || @from.nil? || @to.nil? %>
+    <h2>Enter dates to see your expenses</h2>
+
+<% elsif Date.parse(@from) > Date.parse(@to) %>
+    <%= flash[:success] = "Date `from` must be before `to` " %>
+
+  <% elsif @empty_records %>
+    <%= flash[:success] = "No records on these days, or in one of the days entered" %>
+
+  <% elsif Date.parse(@from) > Date.today %>
+    <%= flash[:success] = "Date `from` must be before today , or today" %>
+
+  <% elsif Date.parse(@to).to_s > @last_expense %>
+    <%= flash[:success] = "Last expense was on #{@last_expense} " %>
+
+  <% else %>
+    <h3>Showing Expenses from <%= @from %> to <%= @to %></h3>
+
+    <%= render 'layouts/table' %>
+
+  <% end %>
+  <br>
+  <br>
+
+  <%= form_tag("dashboard", id: 'formId', method: "get") do %>
+    <%= label_tag(:from, "Date from:") %>
+    <%= text_field_tag(:from, nil, placeholder: "ex: #{Date.yesterday.to_s}") %>
+    <%= label_tag(:from, "Date to:") %>
+    <%= text_field_tag(:to, nil, placeholder: "ex: #{Date.tomorrow.to_s}") %>
+    <br><br>
+    <%= submit_tag("Search", :class => 'btn btn-primary') %>
+  <% end %>
+</div>
+
+
+
+
