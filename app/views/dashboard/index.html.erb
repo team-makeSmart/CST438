@@ -18,8 +18,8 @@
   <% elsif Date.parse(@from) > Date.today %>
     <%= flash[:success] = "Date `from` must be before today , or today" %>
 
-  <% elsif Date.parse(@to).to_s > @last_expense %>
-    <%= flash[:success] = "Last expense was on #{@last_expense} " %>
+  <%# elsif Date.parse(@to).to_s > @last_expense %>
+    <%#= flash[:success] = "Last expense was on #{@last_expense} " %>
 
   <% else %>
     <h3>Showing Expenses from <%= @from %> to <%= @to %></h3>

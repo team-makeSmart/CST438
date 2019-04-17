@@ -22,7 +22,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
         log_in @user
-        flash[:success] = "Welcome to Expense Tracker " + @user.username
+        flash[:success] = "Welcome to Expense Tracker "
         format.html {redirect_to root_path}
         format.json {render :show, status: :created, location: @user}
       else
@@ -33,11 +33,11 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:username, :password, :password_confirmation)
+    params.require(:user).permit(:username, :password, :password_confirmation,:email)
   end
 
   def expenses_json
-    user = User.find_by username: params[:username]
+    user = User.find_by email: params[:email]
     @expenses = Expense.where(user_id: user.id)
   end
 

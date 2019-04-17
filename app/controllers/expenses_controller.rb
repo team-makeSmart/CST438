@@ -5,6 +5,7 @@ class ExpensesController < ApplicationController
   # GET /expenses
   # GET /expenses.json
   def index
+
     if (current_user)
       @expenses = Expense.all
       @first_time = @expenses.where(user_id: current_user.id) == []
@@ -16,6 +17,7 @@ class ExpensesController < ApplicationController
   # GET /expenses/1
   # GET /expenses/1.json
   def show
+
   end
 
   # GET /expenses/new

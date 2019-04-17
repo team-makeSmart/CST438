@@ -3,6 +3,7 @@
 one:
   username: MyString
   password_digest: MyString
+  email: example@mail.com
 
 two:
   username: MyString
