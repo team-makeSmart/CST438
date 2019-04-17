@@ -1,13 +1,16 @@
 require 'test_helper'
 
 class DashboardControllerTest < ActionDispatch::IntegrationTest
+  fixtures :all
 
   setup do
+    log_in_as(users(:three))
     @expense_first = expenses(:three)
     @expense_second = expenses(:four)
   end
 
   test "should get index" do
+
     get dashboard_url
     assert_template 'dashboard/index'
     assert_response :success

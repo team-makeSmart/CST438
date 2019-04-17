@@ -10,7 +10,7 @@
         <li><%=  link_to "Log in", login_path  %></li>
         <%  else  %>
           <li><%= link_to "Log out", logout_path, method: :delete %></li>
-          <li><a href="#" class="btn btn-lg disabled text-white" aria-disabled="true"><%= "Hi "+current_user.username+"!" %></a></li>
+          <li><a href="#" class="btn btn-lg disabled text-white" aria-disabled="true"><%= "Hi "+current_user.email+"!" %></a></li>
         <% end %>
 
 
