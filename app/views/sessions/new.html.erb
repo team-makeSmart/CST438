@@ -1,0 +1,64 @@
+<% provide(:title, "Log In") %>
+
+
+<div class="wrapper">
+  <h1>Log in</h1>
+  <%= bootstrap_form_for(:session, url: login_path) do |f| %>
+    <%= f.text_field :email, id: 'email' %>
+    <%= f.password_field :password, id: 'password' %>
+    <div class="d-inline">
+      <%= f.submit "Log in", class: "btn btn-primary" %>
+      <div class="margin_small_inline">New user?</div>
+      <span class="reference"><%= link_to "Sign up now!", signup_path %></span>
+    </div>
+  <% end %>
+</div>
+
+
+
+
+
+<%= render 'layouts/firebase_init' %>
+
+<!--Insert these scripts at the bottom of the HTML, but before you use any Firebase services-->
+<script>
+
+
+    $('form').submit(function () {
+
+        userEmail = document.getElementById('email').value;
+        userPassword = document.getElementById('password').value;
+
+        firebase.auth().signInWithEmailAndPassword(userEmail, userPassword).catch(function (error) {
+
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            if (error) {
+                alert(errorCode);
+                alert(errorMessage);
+            } else {
+                alert('success');
+            }
+            alert(userEmail)
+        });
+
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+                // User is signed in.
+                var displayName = user.displayName;
+                alert(displayName)
+                var email = user.email;
+                var emailVerified = user.emailVerified;
+                var photoURL = user.photoURL;
+                var isAnonymous = user.isAnonymous;
+                var uid = user.uid;
+                var providerData = user.providerData;
+                // ...
+            } else {
+                // User is signed out.
+                // ...
+            }
+
+        });
+    });
+</script>

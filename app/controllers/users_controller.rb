@@ -19,11 +19,12 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+
     respond_to do |format|
       if @user.save
         log_in @user
         flash[:success] = "Welcome to Expense Tracker "
-        format.html {redirect_to root_path}
+        format.html {redirect_to @user}
         format.json {render :show, status: :created, location: @user}
       else
         format.html {render :new}
