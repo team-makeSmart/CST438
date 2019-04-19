@@ -28,7 +28,6 @@
 
         userEmail = document.getElementById('email').value;
         userPassword = document.getElementById('password').value;
-
         firebase.auth().signInWithEmailAndPassword(userEmail, userPassword).catch(function (error) {
 
             var errorCode = error.code;
@@ -41,6 +40,7 @@
             }
             alert(userEmail)
         });
+
 
         firebase.auth().onAuthStateChanged(function (user) {
             if (user) {
@@ -55,8 +55,7 @@
                 var providerData = user.providerData;
                 // ...
             } else {
-                // User is signed out.
-                // ...
+                alert('no user')
             }
 
         });

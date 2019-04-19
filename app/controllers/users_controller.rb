@@ -20,11 +20,13 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
+
     respond_to do |format|
       if @user.save
+        render 'users/show' and return
         log_in @user
         flash[:success] = "Welcome to Expense Tracker "
-        format.html {redirect_to @user}
+        format.html {redirect_to root_url}
         format.json {render :show, status: :created, location: @user}
       else
         format.html {render :new}
@@ -34,12 +36,14 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:username, :password, :password_confirmation,:email)
+    params.require(:user).permit(:username, :password, :password_confirmation, :email)
+
   end
 
   def expenses_json
     user = User.find_by email: params[:email]
     @expenses = Expense.where(user_id: user.id)
   end
+
 
 end

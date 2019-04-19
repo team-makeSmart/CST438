@@ -21,7 +21,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
 
   test "login with valid information" do
     get login_path
-    post login_path, params: {session: {username: @user.username, password: 'password'}}
+    post login_path, params: {session: {email: @user.email, password: 'password'}}
 
     assert_redirected_to '/'
     follow_redirect!
@@ -37,7 +37,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
 
   test "login then logout" do
     get login_path
-    post login_path, params: {session: {username: @user.username,
+    post login_path, params: {session: {email: @user.email,
                                         password_digest: 'password'}}
 
     get root_url
