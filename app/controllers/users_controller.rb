@@ -23,10 +23,11 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        render 'users/show' and return
         log_in @user
+        render 'users/signup_firebase' and return
+
         flash[:success] = "Welcome to Expense Tracker "
-        format.html {redirect_to root_url}
+        format.html {redirect_to root_url and return}
         format.json {render :show, status: :created, location: @user}
       else
         format.html {render :new}

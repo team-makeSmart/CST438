@@ -13,9 +13,13 @@ class SessionsController < ApplicationController
 
     user = User.find_by(email: params[:session][:email])
     if user && user.authenticate(params[:session][:password])
+      @email = params[:session][:email]
+      @password = params[:session][:password]
+
       log_in user
+      render 'sessions/login_firebase'
       flash[:success] = "Welcome back #{user.email}"
-      redirect_to root_url
+      # redirect_to root_url
 
     else
       flash[:danger] = 'Invalid username or password '
@@ -27,7 +31,7 @@ class SessionsController < ApplicationController
   def destroy
     log_out if logged_in?
     flash[:success] = "Logged Out "
-    redirect_to root_url
+    render 'sessions/logout_firebase'
   end
 
   def user_params
