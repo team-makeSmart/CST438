@@ -1,0 +1,37 @@
+<% provide(:title, "Logged In") %>
+<%= render 'layouts/firebase_init' %>
+
+<!--to get the values from the form-->
+<p id="email" style="display: none"><%= @email %></p>
+<p id="password" style="display: none"><%= @password %></p>
+
+
+<script>
+
+    email = document.getElementById('email').innerText;
+    password = document.getElementById('password').innerText;
+
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
+
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        if (error) {
+            alert(errorCode);
+            alert(errorMessage);
+        } else {
+            alert('success');
+        }
+    });
+    // to check if a user is signed it
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+            alert("Hi from firebase " + user.email)
+        } else {
+            alert("No user is signed in.")
+        }
+    });
+
+
+</script>
+
+<%= render 'layouts/welcome' %>

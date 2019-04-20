@@ -1,0 +1,11 @@
+<% provide(:title, "Logged Out") %>
+<%= render 'layouts/firebase_init' %>
+
+<script>firebase.auth.signOut().then(function(){
+alert("Signed Out from Firebase")
+}, function(error){
+    alert(error)
+});
+</script>
+
+<%= render 'layouts/welcome' %>
