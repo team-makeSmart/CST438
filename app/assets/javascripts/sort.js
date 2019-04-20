@@ -5,6 +5,7 @@
     param tableId:   html id value of the table that will be sorted
 */
 function sortText(colToSort,tableId){
+    var i, j; //To use as iterables in the for-loops
     var table = document.getElementById(tableId); //Create a table object
     var rows = table.rows;  //Create an array representing all the rows as elements
     var current, next;  //Holds the value of the now and the next
@@ -42,6 +43,7 @@ function sortText(colToSort,tableId){
     param tableId:   html id value of the table that will be sorted
 */
 function sortNum(colToSort,tableId){
+    var i, j; //To use as iterables in the for-loops
     var table = document.getElementById(tableId); //Create a table object
     var rows = table.rows;  //Create an array representing all the rows as elements
     var current, next;  //Holds the value of the now and the next
