@@ -23,6 +23,10 @@
 
   <% else %>
     <h3>Showing Expenses from <%= @from %> to <%= @to %></h3>
+      <!-- This will load the graph piechart-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+      <canvas id="pie-chart" width="700" height="400"></canvas>
+      <script> window.onload = function() {pieChart(2,1,"customers")};</script>
 
     <%= render 'layouts/table' %>
 
