@@ -41,7 +41,7 @@ class UsersController < ApplicationController
 
   end
 
-  def expenses_json
+  def get_json_expenses
     email = params[:email].insert(-4, '.')
     user = User.find_by email: email
     @expenses = Expense.where(user_id: user.id)
