@@ -85,12 +85,8 @@ class ExpensesController < ApplicationController
 
   # For creating an expense from the android app
   def post_json_expense
-    Expense.new(expense_params)
-    if expense.save
-      render :json  
-      {
-        status: 200
-      }.to_json
+    expense = Expense.new(expense_params)
+    expense.save
   end
   
   # Never trust parameters from the scary internet, only allow the white list through.
