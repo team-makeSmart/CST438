@@ -13,5 +13,6 @@ module ExpenseTrackerDesktop
     # -- all .rb files in that directory are automatically loaded.
     config.time_zone = "Pacific Time (US & Canada)"
     config.active_record.default_timezone = :utc # Or  local
+    config.action_controller.allow_forgery_protection = false
   end
 end
