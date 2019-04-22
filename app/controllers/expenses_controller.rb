@@ -83,6 +83,11 @@ class ExpensesController < ApplicationController
     @expense = Expense.find(params[:id])
   end
 
+  # For creating an expense from the android app
+  def post_json_expense
+    Expense.new(expense_params)
+  end
+  
   # Never trust parameters from the scary internet, only allow the white list through.
   def expense_params
     params.require(:expense).permit(:user_id, :amount, :category, :description)
