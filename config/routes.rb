@@ -19,5 +19,5 @@ Rails.application.routes.draw do
 
   # for json api requests
   get '/:email' => 'users#get_json_expenses'
-  post '/api' => 'expenses#post_json_expense'
+  post '/api' => 'expenses#create'
 end
