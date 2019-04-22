@@ -18,5 +18,6 @@ Rails.application.routes.draw do
   get 'dashboard' =>'dashboard#index'
 
   # for json api requests
-  get '/:email' => 'users#expenses_json'
+  get '/:email' => 'users#get_json_expenses'
+  post '/:email' => 'expenses#post_json_expense'
 end
