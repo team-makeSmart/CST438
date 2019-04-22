@@ -36,16 +36,13 @@
 
   <%= form_tag("dashboard", id: 'formId', method: "get") do %>
     <%= label_tag(:from, "Date from:") %>
-    <%= text_field_tag(:from, nil, placeholder: "ex: #{Date.yesterday.to_s}") %>
+    <%= date_field_tag(:from, nil, placeholder: "#{Date.yesterday.to_s}") %>
     <%= label_tag(:from, "Date to:") %>
-    <%= text_field_tag(:to, nil, placeholder: "ex: #{Date.tomorrow.to_s}") %>
+    <%= date_field_tag(:to, nil, placeholder: "#{Date.tomorrow.to_s}") %>
     <br><br>
     <%= submit_tag("Search", :class => 'btn btn-primary') %>
   <% end %>
 </div>
-
-
-
 
 <script>
     $(document).on('turbolinks:load', function () {
