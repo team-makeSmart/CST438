@@ -30,7 +30,7 @@ function pieChart(categoryColNum, amountColNum, tableId){
     }
 
     // If the table has now rows, return and do not display a graph
-    if(numRows == 0){
+    if(numRows === 0){
       return;
     }
 
@@ -53,7 +53,7 @@ function pieChart(categoryColNum, amountColNum, tableId){
       */
       if(categoryArray.includes(tempCategory)){ //if true, category is in the categoryArray
         for(j = 0; j < numRows; j++){
-            if(categoryArray[j] == tempCategory){
+            if(categoryArray[j] === tempCategory){
               dataArray[j] = dataArray[j] + tempAmount;
             }
         } //End of inner for loop

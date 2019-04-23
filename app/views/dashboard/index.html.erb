@@ -36,20 +36,20 @@
 
   <%= form_tag("dashboard", id: 'formId', method: "get") do %>
     <%= label_tag(:from, "Date from:") %>
-    <%= date_field_tag(:from, nil, id: 'datePick', placeholder: "#{Date.yesterday.to_s}") %>
+    <%= date_field_tag(:from, nil, class: 'datePick', placeholder: "#{Date.yesterday.to_s}") %>
     <%= label_tag(:from, "Date to:") %>
-    <%= date_field_tag(:to, nil, id: 'datePick', placeholder: "#{Date.tomorrow.to_s}") %>
+    <%= date_field_tag(:to, nil, class: 'datePick', placeholder: "#{Date.tomorrow.to_s}") %>
     <br><br>
     <%= submit_tag("Search", :class => 'btn btn-primary') %>
   <% end %>
 </div>
 
 <script>
-    $(document).on('turbolinks:load', function () {
-      $('.modal-body input[id="datePick"]').datepicker({
-            format: 'yyyy-mm-dd'
+    // $(document).on('turbolinks:load', function () {
+      $('.btn').datepicker({
+            format: 'yyyy-mm-dd',
         }).on('change', function () {
             $('.datepicker').hide();
         });
-    });
+    // });
 </script>
