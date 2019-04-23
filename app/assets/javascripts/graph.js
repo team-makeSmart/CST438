@@ -64,8 +64,9 @@ function pieChart(categoryColNum, amountColNum, tableId){
     }
 
     //colorsArray holds the various colors of the graph
-    var colorsArray = ["#588c7e", "#f2e394","#f2ae72"," #d96459","#96ceb4",
-      '#ffeead', '#ffcc5c',  '#ff6f69', '#674d3c', '#a79e84'];
+    var colorsArray = ["#588c7e", "#f2e394","#f2ae72","#442233","#96ceb4",
+      '#ffeead', '#ffcc5c',  '#ff6f69', '#674d3c', '#a79e84',
+      '#774477', '#665544',  '#228822', '#333333', '#771111'];
 
     //Create the chart object
     new Chart(document.getElementById("pie-chart"), {
