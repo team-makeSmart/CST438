@@ -28216,3 +28216,1162 @@ Processing by CategoryController#index as HTML
 Completed 200 OK in 288ms (Views: 282.2ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for ::1 at 2019-04-22 22:41:14 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (1.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.5ms)
+Completed 200 OK in 397ms (Views: 383.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-22 22:41:16 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 313ms (Views: 300.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-03&to=2019-04-24&commit=Search" for ::1 at 2019-04-22 22:41:21 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-03", "to"=>"2019-04-24", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (1.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (1.9ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE (created_at >= '2019-04-02' AND created_at <= '2019-04-25 19:00:00') ORDER BY "expenses"."created_at" DESC[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (11.2ms)
+  Rendered dashboard/index.html.erb within layouts/application (18.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 439ms (Views: 417.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 22:55:10 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (18.8ms)
+Completed 200 OK in 2469ms (Views: 2462.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 22:55:43 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (16.5ms)
+Completed 200 OK in 456ms (Views: 450.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 22:56:25 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 342ms (Views: 338.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:01:06 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:GreaterExpenseByMonthController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/greater_expense_by_month_controller.rb:2)
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (453.8ms)
+Completed 500 Internal Server Error in 495ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `your_index_action_path' for #<#<Class:0x00007fe6306f76b0>:0x00007fe6306f6378>):
+    1: <% provide(:title, "Greater expense by month") %>
+    2: 
+    3: <%= form_tag your_index_action_path, method: :get do%>
+    4:   <%= select_year(Date.today, {:prompt => "Year",:start_year => DateTime.now.year,:end_year => DateTime.now.year - 7, prefix: 'select'},{:field_name => 'year', :id => 'start-year'}) %>
+    5:   <%= select_month(Date.today, {:prompt => "month",use_short_month: true, prefix: 'select'},{:field_name => 'month', :id => 'start-month'}) %>
+    6:   <%= submit_tag("Search Job", :id=>"button", :class=>"Test", :name=>"submit") %>
+  
+app/views/greater_expense_by_month/index.html.erb:3:in `_app_views_greater_expense_by_month_index_html_erb___2139207889596054348_70313315909460'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (167.9ms)
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:01:17 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (375.1ms)
+Completed 500 Internal Server Error in 392ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index' for #<#<Class:0x00007fe6306f76b0>:0x00007fe634d0c880>):
+    1: <% provide(:title, "Greater expense by month") %>
+    2: 
+    3: <%= form_tag index, method: :get do%>
+    4:   <%= select_year(Date.today, {:prompt => "Year",:start_year => DateTime.now.year,:end_year => DateTime.now.year - 7, prefix: 'select'},{:field_name => 'year', :id => 'start-year'}) %>
+    5:   <%= select_month(Date.today, {:prompt => "month",use_short_month: true, prefix: 'select'},{:field_name => 'month', :id => 'start-month'}) %>
+    6:   <%= submit_tag("Search Job", :id=>"button", :class=>"Test", :name=>"submit") %>
+  
+app/views/greater_expense_by_month/index.html.erb:3:in `_app_views_greater_expense_by_month_index_html_erb___2139207889596054348_70313352653180'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (157.5ms)
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:01:49 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (302.5ms)
+Completed 500 Internal Server Error in 322ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `index_path' for #<#<Class:0x00007fe6306f76b0>:0x00007fe635f1fc70>
+Did you mean?  video_path):
+    1: <% provide(:title, "Greater expense by month") %>
+    2: 
+    3: <%= form_tag :index, method: :get do%>
+    4:   <%= select_year(Date.today, {:prompt => "Year",:start_year => DateTime.now.year,:end_year => DateTime.now.year - 7, prefix: 'select'},{:field_name => 'year', :id => 'start-year'}) %>
+    5:   <%= select_month(Date.today, {:prompt => "month",use_short_month: true, prefix: 'select'},{:field_name => 'month', :id => 'start-month'}) %>
+    6:   <%= submit_tag("Search Job", :id=>"button", :class=>"Test", :name=>"submit") %>
+  
+app/views/greater_expense_by_month/index.html.erb:3:in `_app_views_greater_expense_by_month_index_html_erb___2139207889596054348_70313362088740'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (151.5ms)
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:01:58 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 355ms (Views: 349.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:02:45 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 349ms (Views: 341.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:03:12 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.6ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 345ms (Views: 338.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:04:10 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (216.5ms)
+Completed 500 Internal Server Error in 232ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `select_month' for #<BootstrapForm::FormBuilder:0x00007fe63176a128>):
+    10: <div class="wrapper">
+    11:   <h1>Select Category</h1>
+    12:   <%= bootstrap_form_tag url: 'index' ,method: "get" do |f| %>
+    13:     <%= f.select_month(Date.today, {:prompt => "month",use_short_month: true, prefix: 'select'},{:field_name => 'month', :id => 'start-month'}) %>
+    14: 
+    15:     %>
+    16:   <% end %>
+  
+app/views/greater_expense_by_month/index.html.erb:13:in `block in _app_views_greater_expense_by_month_index_html_erb___2139207889596054348_70313380742420'
+app/views/greater_expense_by_month/index.html.erb:12:in `_app_views_greater_expense_by_month_index_html_erb___2139207889596054348_70313380742420'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (152.2ms)
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:04:31 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (185.9ms)
+Completed 500 Internal Server Error in 200ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `select_month' for #<BootstrapForm::FormBuilder:0x00007fe637acbf78>):
+    10: <div class="wrapper">
+    11:   <h1>Select Category</h1>
+    12:   <%= bootstrap_form_tag url: 'index' ,method: "get" do |f| %>
+    13:     <%= f.select_month(Date.today, {:prompt => "month",use_short_month: true, prefix: 'select'},{:field_name => 'month', :id => 'start-month'}) %>
+    14:   <% end %>
+    15: </div>
+  
+app/views/greater_expense_by_month/index.html.erb:13:in `block in _app_views_greater_expense_by_month_index_html_erb___2139207889596054348_70313367533880'
+app/views/greater_expense_by_month/index.html.erb:12:in `_app_views_greater_expense_by_month_index_html_erb___2139207889596054348_70313367533880'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (148.3ms)
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:04:44 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (191.6ms)
+Completed 500 Internal Server Error in 206ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `month' for #<BootstrapForm::FormBuilder:0x00007fe6306bdca8>):
+    10: <div class="wrapper">
+    11:   <h1>Select Category</h1>
+    12:   <%= bootstrap_form_tag url: 'index' ,method: "get" do |f| %>
+    13:     <%= f.month(Date.today, {:prompt => "month",use_short_month: true, prefix: 'select'},{:field_name => 'month', :id => 'start-month'}) %>
+    14:   <% end %>
+    15: </div>
+  
+app/views/greater_expense_by_month/index.html.erb:13:in `block in _app_views_greater_expense_by_month_index_html_erb___2139207889596054348_70313361404220'
+app/views/greater_expense_by_month/index.html.erb:12:in `_app_views_greater_expense_by_month_index_html_erb___2139207889596054348_70313361404220'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (148.8ms)
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:05:12 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    10: <div class="wrapper">
+    11:   <h1>Select Category</h1>
+    12:   <%= bootstrap_form_tag url: 'index' ,method: "get" do |f| %>
+    13:     <%= f.month_field(Date.today, {:prompt => "month",use_short_month: true, prefix: 'select'},{:field_name => 'month', :id => 'start-month'}) %>
+    14:   <% end %>
+    15: </div>
+  
+app/views/greater_expense_by_month/index.html.erb:13:in `block in _app_views_greater_expense_by_month_index_html_erb___2139207889596054348_70313360066500'
+app/views/greater_expense_by_month/index.html.erb:12:in `_app_views_greater_expense_by_month_index_html_erb___2139207889596054348_70313360066500'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (165.9ms)
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:06:56 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    10: <div class="wrapper">
+    11:   <h1>Select Month</h1>
+    12:   <%= bootstrap_form_tag url: 'index' do |f| %>
+    13:     <%= f.month_field %>
+    14:     <%= f.submit %>
+    15:   <% end %>
+    16: </div>
+  
+app/views/greater_expense_by_month/index.html.erb:13:in `block in _app_views_greater_expense_by_month_index_html_erb___2139207889596054348_70313361778260'
+app/views/greater_expense_by_month/index.html.erb:12:in `_app_views_greater_expense_by_month_index_html_erb___2139207889596054348_70313361778260'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (154.6ms)
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:08:21 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 356ms (Views: 350.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:08:35 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 336ms (Views: 330.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:10:06 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 378ms (Views: 372.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:10:33 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 343ms (Views: 337.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:10:49 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 272ms (Views: 266.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:11:03 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 265ms (Views: 256.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:11:59 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 292ms (Views: 284.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/index?utf8=%E2%9C%93&select%5Bmonth%5D=4&commit=Search" for ::1 at 2019-04-22 23:12:39 -0700
+Processing by UsersController#get_json_expenses as HTML
+  Parameters: {"utf8"=>"✓", "select"=>{"month"=>"4"}, "commit"=>"Search", "email"=>"index"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "in.dex"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/users_controller.rb:47:in `get_json_expenses'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (832.5ms)
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:12:53 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:GreaterExpenseByMonthController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/greater_expense_by_month_controller.rb:2)
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 19921ms (ActiveRecord: 0.5ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/greater_expense_by_month_controller.rb:6:in `index'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (195.9ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (45.6ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.4ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (440.9ms)
+Started GET "/" for 127.0.0.1 at 2019-04-22 23:13:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (1.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (48.1ms)
+Completed 200 OK in 1871ms (Views: 1856.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/greater_monthly" for 127.0.0.1 at 2019-04-22 23:14:12 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:GreaterExpenseByMonthController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/greater_expense_by_month_controller.rb:2)
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 13406ms (ActiveRecord: 0.1ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/greater_expense_by_month_controller.rb:6:in `index'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (255.8ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (59.5ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.8ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (513.8ms)
+Started GET "/" for 127.0.0.1 at 2019-04-22 23:16:10 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (0.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (40.2ms)
+Completed 200 OK in 1254ms (Views: 1239.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-22 23:16:40 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (1.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.9ms)
+Completed 200 OK in 343ms (Views: 338.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-22 23:19:19 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (1.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 480ms (Views: 473.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-22 23:19:28 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (0.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.4ms)
+Completed 200 OK in 358ms (Views: 350.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-22 23:21:24 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (0.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 355ms (Views: 351.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/greater_monthly" for 127.0.0.1 at 2019-04-22 23:21:43 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:GreaterExpenseByMonthController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/greater_expense_by_month_controller.rb:2)
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.5ms)[0m  [1m[34mselect DISTINCT category from expenses where user_id = 83[0m
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and category = '' [0m
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 356ms (Views: 324.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/index?utf8=%E2%9C%93&select%5Bmonth%5D=5&commit=Search" for 127.0.0.1 at 2019-04-22 23:21:58 -0700
+Processing by UsersController#get_json_expenses as HTML
+  Parameters: {"utf8"=>"✓", "select"=>{"month"=>"5"}, "commit"=>"Search", "email"=>"index"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "in.dex"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/users_controller.rb:47:in `get_json_expenses'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (197.4ms)
+Started GET "/index?utf8=%E2%9C%93&select%5Bmonth%5D=5&commit=Search" for 127.0.0.1 at 2019-04-22 23:22:57 -0700
+Processing by UsersController#get_json_expenses as HTML
+  Parameters: {"utf8"=>"✓", "select"=>{"month"=>"5"}, "commit"=>"Search", "email"=>"index"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "in.dex"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/users_controller.rb:47:in `get_json_expenses'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (155.9ms)
+Started GET "/index?utf8=%E2%9C%93&select%5Bmonth%5D=5&commit=Search" for 127.0.0.1 at 2019-04-22 23:23:35 -0700
+Processing by UsersController#get_json_expenses as HTML
+  Parameters: {"utf8"=>"✓", "select"=>{"month"=>"5"}, "commit"=>"Search", "email"=>"index"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "in.dex"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/users_controller.rb:47:in `get_json_expenses'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (153.5ms)
+Started GET "/" for 127.0.0.1 at 2019-04-22 23:23:39 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (0.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (7.2ms)
+Completed 200 OK in 363ms (Views: 354.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/greater_monthly" for 127.0.0.1 at 2019-04-22 23:23:41 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:GreaterExpenseByMonthController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/greater_expense_by_month_controller.rb:2)
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+Started GET "/index?utf8=%E2%9C%93&select%5Bmonth%5D=4&commit=Search" for 127.0.0.1 at 2019-04-22 23:24:24 -0700
+Processing by UsersController#get_json_expenses as HTML
+  Parameters: {"utf8"=>"✓", "select"=>{"month"=>"4"}, "commit"=>"Search", "email"=>"index"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "in.dex"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 43135ms (ActiveRecord: 0.2ms)
+
+
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.8ms)
+
+
+  
+  
+SystemExit (exit):
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+  
+app/controllers/greater_expense_by_month_controller.rb:6:in `index'
+app/controllers/users_controller.rb:47:in `get_json_expenses'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (294.0ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (408.1ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (46.6ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (52.4ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (21.8ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (851.1ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.6ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (903.0ms)
+Started GET "/" for 127.0.0.1 at 2019-04-22 23:24:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (1.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (25.7ms)
+Completed 200 OK in 1114ms (Views: 1100.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/greater_monthly" for 127.0.0.1 at 2019-04-22 23:25:22 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:GreaterExpenseByMonthController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/greater_expense_by_month_controller.rb:2)
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 372ms (Views: 352.9ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/greater_monthly?method=get" for 127.0.0.1 at 2019-04-22 23:25:28 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/greater_monthly"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered collection of /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (11.2ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.9ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (274.9ms)
+Started POST "/greater_monthly?method=get" for 127.0.0.1 at 2019-04-22 23:25:55 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/greater_monthly"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (8.8ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (212.2ms)
+Started POST "/greater_monthly?method=get" for 127.0.0.1 at 2019-04-22 23:26:11 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/greater_monthly"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered collection of /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (12.9ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (213.8ms)
+Started GET "/" for 127.0.0.1 at 2019-04-22 23:26:26 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (1.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (43.9ms)
+Completed 200 OK in 1490ms (Views: 1474.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/greater_monthly" for 127.0.0.1 at 2019-04-22 23:26:31 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:GreaterExpenseByMonthController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/greater_expense_by_month_controller.rb:2)
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 66964ms (ActiveRecord: 0.5ms)
+
+
+  
+Started GET "/greater_monthly" for 127.0.0.1 at 2019-04-22 23:27:38 -0700
+SystemExit (exit):
+  
+app/controllers/greater_expense_by_month_controller.rb:6:in `index'
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3167ms (ActiveRecord: 1.3ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/greater_expense_by_month_controller.rb:6:in `index'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (395.3ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (589.1ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (86.4ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (74.1ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.0ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1057.3ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.2ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1149.0ms)
+Started GET "/" for ::1 at 2019-04-22 23:27:58 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (1.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (39.2ms)
+Completed 200 OK in 1159ms (Views: 1145.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:28:01 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:GreaterExpenseByMonthController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/greater_expense_by_month_controller.rb:2)
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 380ms (Views: 370.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/index?utf8=%E2%9C%93&select%5Bmonth%5D=2&commit=Search" for ::1 at 2019-04-22 23:28:09 -0700
+Processing by UsersController#get_json_expenses as HTML
+  Parameters: {"utf8"=>"✓", "select"=>{"month"=>"2"}, "commit"=>"Search", "email"=>"index"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "in.dex"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.1ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/users_controller.rb:47:in `get_json_expenses'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (179.7ms)
+Started GET "/index?utf8=%E2%9C%93&select%5Bmonth%5D=2&commit=Search" for ::1 at 2019-04-22 23:30:09 -0700
+Processing by UsersController#get_json_expenses as HTML
+  Parameters: {"utf8"=>"✓", "select"=>{"month"=>"2"}, "commit"=>"Search", "email"=>"index"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "in.dex"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/users_controller.rb:47:in `get_json_expenses'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (156.3ms)
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:30:14 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:GreaterExpenseByMonthController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/greater_expense_by_month_controller.rb:2)
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 31780ms (ActiveRecord: 2.1ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/greater_expense_by_month_controller.rb:6:in `index'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (244.6ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (63.5ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.0ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (499.8ms)
+Started GET "/" for ::1 at 2019-04-22 23:30:51 -0700
+Started GET "/greater_monthly" for 127.0.0.1 at 2019-04-22 23:30:52 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (21.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (36.7ms)
+  Rendered layouts/_shim.html.erb (7.9ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (174.3ms)
+Completed 200 OK in 4844ms (Views: 4822.6ms | ActiveRecord: 5.4ms)
+
+
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:GreaterExpenseByMonthController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/greater_expense_by_month_controller.rb:2)
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (23.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (12.8ms)
+Completed 200 OK in 5012ms (Views: 4811.3ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/app/views/greater_expense_by_month?utf8=%E2%9C%93&select%5Bmonth%5D=4&commit=Search" for 127.0.0.1 at 2019-04-22 23:31:09 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/greater_expense_by_month"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (38.8ms)
+  Rendered collection of /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (214.7ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (20.4ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (42.7ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (661.8ms)
+Started GET "/app/views/greater_expense_by_month?utf8=%E2%9C%93&select%5Bmonth%5D=4&commit=Search" for ::1 at 2019-04-22 23:31:42 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/greater_expense_by_month"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (44.6ms)
+  Rendered collection of /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (236.6ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.4ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (43.2ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (712.8ms)
+Started GET "/" for ::1 at 2019-04-22 23:31:46 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (14.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (25.2ms)
+  Rendered layouts/_shim.html.erb (2.0ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (26.7ms)
+Completed 200 OK in 6140ms (Views: 6117.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:31:54 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (24.8ms)
+Started GET "/app/views/greater_expense_by_month?utf8=%E2%9C%93&select%5Bmonth%5D=4&commit=Search" for 127.0.0.1 at 2019-04-22 23:31:57 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/greater_expense_by_month"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (42.3ms)
+  Rendered collection of /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [30 times] (221.1ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.6ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (40.4ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (809.1ms)
+  Rendered layouts/_shim.html.erb (2.3ms)
+  Rendered layouts/_header.html.erb (10.3ms)
+Completed 200 OK in 7181ms (Views: 7145.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/greater_monthly" for 127.0.0.1 at 2019-04-22 23:32:26 -0700
+Started GET "/greater_monthly" for 127.0.0.1 at 2019-04-22 23:32:26 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GreaterExpenseByMonthController#index as HTML
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (30.6ms)
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (23.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 1713ms (Views: 1668.7ms | ActiveRecord: 1.2ms)
+
+
+Completed 200 OK in 1714ms (Views: 1672.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-04-22 23:32:32 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (1.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 328ms (Views: 322.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/greater_monthly" for ::1 at 2019-04-22 23:32:34 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 377ms (Views: 370.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/greater_monthly?utf8=%E2%9C%93&select%5Bmonth%5D=4&commit=Search" for 127.0.0.1 at 2019-04-22 23:32:37 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  Parameters: {"utf8"=>"✓", "select"=>{"month"=>"4"}, "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering greater_expense_by_month/index.html.erb within layouts/application
+  Rendered greater_expense_by_month/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 282ms (Views: 278.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/greater_monthly?utf8=%E2%9C%93&select%5Bmonth%5D=4&commit=Search" for 127.0.0.1 at 2019-04-22 23:32:45 -0700
+Processing by GreaterExpenseByMonthController#index as HTML
+  Parameters: {"utf8"=>"✓", "select"=>{"month"=>"4"}, "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (8.3ms)[0m  [1m[34mselect max(amount) from expenses[0m
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT amount.*, MAX(amount) FROM "expenses" ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect amount from expenses[0m
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect MAX(amount) from expenses[0m
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect MAX(amount) as am from expenses[0m
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT MAX(amount) FROM "expenses" ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT MAX(amount) FROM "expenses" ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT amount.*, MAX(amount) FROM "expenses" ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT amount.*, MAX(amount) FROM "expenses" ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mselect amount from expenses[0m
