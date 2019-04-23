@@ -4,5 +4,4 @@
         $('.alert-success').fadeOut('slow');
     }, 3000);
 
-
 }());

@@ -27,7 +27,7 @@ class UsersController < ApplicationController
         render 'users/signup_firebase' and return
 
         flash[:success] = "Welcome to Expense Tracker "
-        format.html {redirect_to root_url and return}
+        # format.html {redirect_to root_url and return}
         format.json {render :show, status: :created, location: @user}
       else
         format.html {render :new}

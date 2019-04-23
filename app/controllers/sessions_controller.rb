@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
 
 
   def new
-    if !current_user.nil?
+    unless current_user.nil?
       flash[:danger] = 'action not permitted'
       redirect_to root_url
     end
@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
   def create
 
     user = User.find_by(email: params[:session][:email])
-    if user && user.authenticate(params[:session][:password])
+    if user&.authenticate(params[:session][:password])
       @email = params[:session][:email]
       @password = params[:session][:password]
 

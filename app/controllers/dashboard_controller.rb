@@ -1,8 +1,7 @@
 class DashboardController < ApplicationController
-
+  before_action 'logged_in_user'
 
   def index
-    logged_in_user
     unless params['from'].nil? || params['to'].nil? || params['from'] == "" || params['to'] == ""
       get_records
     end
