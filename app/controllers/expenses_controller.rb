@@ -85,7 +85,12 @@ class ExpensesController < ApplicationController
 
   # For creating an expense from the android app
   def post_json_expense
-    Expense.new(expense_params).save
+    expense = Expense.new(expense_params)
+    if expense.save
+	  return render status: 200
+	else
+	  return render status: 400, json: { error: true }
+    end
   end
   
   # Never trust parameters from the scary internet, only allow the white list through.
