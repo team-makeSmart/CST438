@@ -2,31 +2,33 @@
 
 
 <div class="modal-body center">
+  <!--   as long as the datepicker works correctly, there is no invalid input -->
+  <%# if !@valid %>
+  <%#= flash[:success] = "Invalid Date Format, please try again " %>
 
-  <% if !@valid %>
-    <%= flash[:success] = "Invalid Date Format, please try again " %>
-
-  <% elsif @from == "" || @to == "" || @from.nil? || @to.nil? %>
+  <% if @from == "" || @to == "" || @from.nil? || @to.nil? %>
     <h2>Enter dates to see your expenses</h2>
 
   <% elsif Date.parse(@from) > Date.parse(@to) %>
-    <%= flash[:success] = "Date `from` must be before `to` " %>
+    <h2> Date `from` must be before `to` </h2>
 
   <% elsif @empty_records %>
-    <%= flash[:success] = "No records on these days, or in one of the days entered" %>
+    <h2> No records on these days </h2>
 
   <% elsif Date.parse(@from) > Date.today %>
-    <%= flash[:success] = "Date `from` must be before today , or today" %>
+    <h2> Date `from` must be before today , or today </h2>
 
-    <%# elsif Date.parse(@to).to_s > @last_expense %>
-    <%#= flash[:success] = "Last expense was on #{@last_expense} " %>
+  <% elsif Date.parse(@to).to_s > @last_expense %>
+    <h2> Last expense was on    <%= "#{@last_expense} " %> </h2>
 
   <% else %>
     <h3>Showing Expenses from <%= @from %> to <%= @to %></h3>
-      <!-- This will load the graph piechart-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-      <canvas id="pie-chart" width="700" height="400"></canvas>
-      <script> window.onload = function() {pieChart(2,1,"customers")};</script>
+    <!-- This will load the graph piechart-->
+
+    <canvas id="pie-chart" width="700" height="400"></canvas>
+    <script> window.onload = function () {
+        pieChart(2, 1, "customers")
+    };</script>
 
     <%= render 'layouts/table' %>
 
@@ -36,20 +38,20 @@
 
   <%= form_tag("dashboard", id: 'formId', method: "get") do %>
     <%= label_tag(:from, "Date from:") %>
-    <%= date_field_tag(:from, nil, id: 'datePick', placeholder: "#{Date.yesterday.to_s}") %>
+    <%= date_field_tag(:from, nil, class: 'datePick', placeholder: "#{Date.yesterday.to_s}") %>
     <%= label_tag(:from, "Date to:") %>
-    <%= date_field_tag(:to, nil, id: 'datePick', placeholder: "#{Date.tomorrow.to_s}") %>
+    <%= date_field_tag(:to, nil, class: 'datePick', placeholder: "#{Date.tomorrow.to_s}") %>
     <br><br>
     <%= submit_tag("Search", :class => 'btn btn-primary') %>
   <% end %>
 </div>
 
 <script>
-    $(document).on('turbolinks:load', function () {
-      $('.modal-body input[id="datePick"]').datepicker({
-            format: 'yyyy-mm-dd'
-        }).on('change', function () {
-            $('.datepicker').hide();
-        });
+    // $(document).on('turbolinks:load', function () {
+    $('.btn').datepicker({
+        format: 'yyyy-mm-dd',
+    }).on('change', function () {
+        $('.datepicker').hide();
     });
+    // });
 </script>

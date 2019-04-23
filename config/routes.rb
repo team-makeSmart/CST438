@@ -16,7 +16,6 @@ Rails.application.routes.draw do
   resources :users
   resources :expenses
 
-
   get 'dashboard' => 'dashboard#index'
   get 'category' => 'category#index'
 
