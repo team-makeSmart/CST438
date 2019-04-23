@@ -30265,3 +30265,2209 @@ Processing by DashboardController#index as HTML
 Completed 200 OK in 289ms (Views: 279.9ms | ActiveRecord: 1.3ms)
 
 
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 07:41:43 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE (created_at >= '2019-04-15' AND created_at <= '2019-04-24 19:00:00') ORDER BY "expenses"."created_at" DESC[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (11.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 407ms (Views: 397.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-23 07:42:15 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (1.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.6ms)
+Completed 200 OK in 339ms (Views: 333.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 07:42:17 -0700
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 337ms (Views: 328.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 07:42:53 -0700
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 371ms (Views: 365.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-24&commit=Search" for ::1 at 2019-04-23 07:43:00 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-24", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE (created_at >= '2019-04-15' AND created_at <= '2019-04-25 19:00:00') ORDER BY "expenses"."created_at" DESC[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 275ms (Views: 267.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 07:43:07 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.6ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.5ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE (created_at >= '2019-04-15' AND created_at <= '2019-04-24 19:00:00') ORDER BY "expenses"."created_at" DESC[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (12.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 270ms (Views: 258.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-24&commit=Search" for ::1 at 2019-04-23 07:43:22 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-24", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.5ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.7ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE (created_at >= '2019-04-01' AND created_at <= '2019-04-25 19:00:00') ORDER BY "expenses"."created_at" DESC[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 260ms (Views: 248.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-17&commit=Search" for ::1 at 2019-04-23 07:43:31 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-17", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.9ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.7ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE (created_at >= '2019-03-31' AND created_at <= '2019-04-18 19:00:00') ORDER BY "expenses"."created_at" DESC[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered layouts/_table.html.erb (1.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 282ms (Views: 270.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:00:05 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.9ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE (created_at >= '2019-04-15' AND created_at <= '2019-04-24 19:00:00') ORDER BY "expenses"."created_at" DESC[0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (12.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (18.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 415ms (Views: 399.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-03&commit=Search" for ::1 at 2019-04-23 08:00:57 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-03", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect amount from expenses[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mselect amount from expenses[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mselect amount from expenses[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mselect amount from expenses[0m
+  [1m[36mExpense Load (0.5ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE (created_at >= '2019-04-01' AND created_at <= '2019-04-04 19:00:00') ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE (created_at >= '2019-04-01' AND created_at <= '2019-04-04 19:00:00') ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE (created_at >= '2019-04-01' AND created_at <= '2019-04-04 19:00:00') ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE (created_at >= '2019-04-01' AND created_at <= '2019-04-04 19:00:00') ORDER BY "expenses"."created_at" DESC[0m
+Completed 500 Internal Server Error in 195274ms (ActiveRecord: 2.5ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/dashboard_controller.rb:6:in `index'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (324.7ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (64.4ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (19.5ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (595.3ms)
+Started GET "/" for ::1 at 2019-04-23 08:04:28 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (0.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (31.8ms)
+Completed 200 OK in 7353ms (Views: 7334.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:04:38 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 411ms (Views: 401.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-03&commit=Search" for ::1 at 2019-04-23 08:04:45 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-03", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.6ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT "expenses".* FROM "expenses" WHERE (created_at >= '2019-04-01' AND created_at <= '2019-04-04 19:00:00') ORDER BY "expenses"."created_at" DESC[0m
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >='2019-04-03 21:53:32' and created_at <='2019-04-03 21:53:32'[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >='2019-04-03 21:53:32' and created_at <='2019-04-03 21:53:32'[0m
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-04 12:00:00 -0700' [0m
+Completed 500 Internal Server Error in 732038ms (ActiveRecord: 2.8ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/dashboard_controller.rb:25:in `get_records'
+app/controllers/dashboard_controller.rb:7:in `index'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (205.3ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (49.8ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (19.2ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (467.6ms)
+Started GET "/" for ::1 at 2019-04-23 08:17:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (1.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (22.1ms)
+Completed 200 OK in 1142ms (Views: 1127.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:17:33 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 297ms (Views: 288.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-03&commit=Search" for ::1 at 2019-04-23 08:17:40 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-03", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-03-31 and created_at <= '2019-04-04 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+Completed 200 OK in 301ms (Views: 275.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:17:50 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (42.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (47.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 312ms (Views: 305.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-17&commit=Search" for ::1 at 2019-04-23 08:18:06 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-17", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.7ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-18 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 257ms (Views: 246.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:18:16 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (11.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 285ms (Views: 272.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:18:51 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (13.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (19.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 309ms (Views: 277.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-09&commit=Search" for ::1 at 2019-04-23 08:19:00 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-09", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-10 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 280ms (Views: 267.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-09&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:19:07 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-09", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-08 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (13.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (19.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 284ms (Views: 278.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-01&commit=Search" for ::1 at 2019-04-23 08:19:32 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-01", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-02 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 268ms (Views: 257.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:19:40 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.5ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (12.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 292ms (Views: 282.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:20:06 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (12.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (18.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 696ms (Views: 687.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-08&commit=Search" for ::1 at 2019-04-23 08:20:14 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-08", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-09 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 291ms (Views: 282.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-15&commit=Search" for ::1 at 2019-04-23 08:20:24 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-15", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-16 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 290ms (Views: 283.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:20:34 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-03-31 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (10.9ms)
+  Rendered dashboard/index.html.erb within layouts/application (16.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 285ms (Views: 277.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-08&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:21:06 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-08", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-07 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (10.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (16.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 332ms (Views: 323.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-24&commit=Search" for ::1 at 2019-04-23 08:21:15 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-24", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-25 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 291ms (Views: 285.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-08&to=2019-04-08&commit=Search" for ::1 at 2019-04-23 08:21:22 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-08", "to"=>"2019-04-08", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-07 and created_at <= '2019-04-09 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 279ms (Views: 272.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-15&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:21:33 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-15", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-14 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (9.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (15.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 323ms (Views: 310.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-23&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:21:57 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-23", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-22 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (11.5ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 292ms (Views: 280.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:22:46 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+Completed 500 Internal Server Error in 129492ms (ActiveRecord: 2.6ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/dashboard_controller.rb:26:in `get_records'
+app/controllers/dashboard_controller.rb:7:in `index'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (228.6ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (56.2ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (15.4ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (506.6ms)
+Started GET "/" for ::1 at 2019-04-23 08:25:12 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (0.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (40.4ms)
+Completed 200 OK in 1599ms (Views: 1582.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:25:17 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 337ms (Views: 324.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:25:29 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-03-31 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 291ms (Views: 255.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:25:38 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.5ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-03-31 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 273ms (Views: 260.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:25:54 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-03-31 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (44.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (51.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 352ms (Views: 317.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-30&commit=Search" for ::1 at 2019-04-23 08:26:22 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-30", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-03-31 and created_at <= '2019-05-01 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 273ms (Views: 264.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-03&to=2019-04-08&commit=Search" for ::1 at 2019-04-23 08:26:30 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-03", "to"=>"2019-04-08", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-02 and created_at <= '2019-04-09 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered layouts/_table.html.erb (1.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 284ms (Views: 275.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-15&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:27:01 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-15", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-14 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (13.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (18.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 276ms (Views: 268.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-17&commit=Search" for ::1 at 2019-04-23 08:27:13 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-17", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-18 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered layouts/_table.html.erb (0.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+Completed 200 OK in 287ms (Views: 278.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-17&commit=Search" for ::1 at 2019-04-23 08:28:03 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-17", "commit"=>"Search"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-18 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 357ms (Views: 347.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-08&to=2019-04-16&commit=Search" for ::1 at 2019-04-23 08:28:14 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-08", "to"=>"2019-04-16", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-07 and created_at <= '2019-04-17 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 354ms (Views: 344.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:28:20 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (12.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (18.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 369ms (Views: 358.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-22&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:28:43 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-22", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (1.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-21 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (12.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 356ms (Views: 346.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-23 08:28:57 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (1.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (19.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 380ms (Views: 374.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:28:59 -0700
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 295ms (Views: 288.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:30:21 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 486ms (Views: 460.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:30:29 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 523ms (Views: 498.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:30:34 -0700
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 302ms (Views: 296.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:30:48 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 487ms (Views: 453.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:31:00 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 346ms (Views: 319.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-23 08:31:07 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (0.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (13.2ms)
+Completed 200 OK in 343ms (Views: 337.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-04-23 08:31:10 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (0.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 264ms (Views: 258.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:31:13 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 298ms (Views: 290.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:31:23 -0700
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 344ms (Views: 337.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-04-23 08:31:30 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (0.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 278ms (Views: 271.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:31:31 -0700
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 313ms (Views: 304.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-01&commit=Search" for ::1 at 2019-04-23 08:31:36 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-01", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-02 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 283ms (Views: 255.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-10&commit=Search" for ::1 at 2019-04-23 08:31:44 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-10", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-03-31 and created_at <= '2019-04-11 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 272ms (Views: 264.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:31:51 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (12.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 288ms (Views: 280.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=&commit=Search" for ::1 at 2019-04-23 08:32:00 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 276ms (Views: 270.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=&commit=Search" for ::1 at 2019-04-23 08:32:27 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 275ms (Views: 270.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-01&commit=Search" for ::1 at 2019-04-23 08:32:33 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-01", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-02 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 276ms (Views: 267.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=&to=&commit=Search" for ::1 at 2019-04-23 08:32:35 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"", "to"=>"", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 268ms (Views: 263.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=0353-03-05&to=&commit=Search" for ::1 at 2019-04-23 08:32:51 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"0353-03-05", "to"=>"", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 253ms (Views: 246.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=0353-03-05&to=&commit=Search" for ::1 at 2019-04-23 08:33:22 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"0353-03-05", "to"=>"", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 405ms (Views: 382.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=0006-04-06&to=&commit=Search" for ::1 at 2019-04-23 08:33:30 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"0006-04-06", "to"=>"", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 274ms (Views: 270.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=0006-04-06&to=&commit=Search" for ::1 at 2019-04-23 08:33:49 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"0006-04-06", "to"=>"", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 293ms (Views: 268.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-04-23 08:34:03 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (0.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 279ms (Views: 272.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:34:04 -0700
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.6ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/dashboard_controller.rb:30:in `parse'
+app/controllers/dashboard_controller.rb:30:in `date_input'
+app/controllers/dashboard_controller.rb:5:in `index'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (164.8ms)
+Started GET "/dashboard" for ::1 at 2019-04-23 08:34:28 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 284ms (Views: 264.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:34:38 -0700
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 282ms (Views: 277.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-04-23 08:34:43 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (0.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.2ms)
+Completed 200 OK in 284ms (Views: 275.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:34:44 -0700
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 295ms (Views: 288.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:34:48 -0700
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 279ms (Views: 273.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-03-31&to=&commit=Search" for ::1 at 2019-04-23 08:34:52 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-03-31", "to"=>"", "commit"=>"Search"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 279ms (Views: 272.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-09&to=2019-04-09&commit=Search" for ::1 at 2019-04-23 08:34:57 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-09", "to"=>"2019-04-09", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-08 and created_at <= '2019-04-10 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 292ms (Views: 269.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-01&commit=Search" for ::1 at 2019-04-23 08:35:05 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-01", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.6ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-03-31 and created_at <= '2019-04-02 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 292ms (Views: 278.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-01&commit=Search" for ::1 at 2019-04-23 08:35:36 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-01", "commit"=>"Search"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 354ms (Views: 329.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-01&commit=Search" for ::1 at 2019-04-23 08:35:41 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-01", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 285ms (Views: 280.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-09&to=2019-04-01&commit=Search" for ::1 at 2019-04-23 08:35:48 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-09", "to"=>"2019-04-01", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 349ms (Views: 342.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-17&commit=Search" for ::1 at 2019-04-23 08:36:04 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-17", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 266ms (Views: 261.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-02&commit=Search" for ::1 at 2019-04-23 08:36:27 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-02", "commit"=>"Search"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 273ms (Views: 265.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-02&commit=Search" for ::1 at 2019-04-23 08:36:46 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-02", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 332ms (Views: 311.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-02&commit=Search" for ::1 at 2019-04-23 08:36:54 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-02", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 341ms (Views: 320.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-02&commit=Search" for ::1 at 2019-04-23 08:37:00 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-02", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 268ms (Views: 261.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-04-23 08:37:03 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (0.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 278ms (Views: 272.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:37:05 -0700
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 244ms (Views: 236.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-01&commit=Search" for ::1 at 2019-04-23 08:37:10 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-01", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 284ms (Views: 276.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-04-23 08:37:25 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (0.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 266ms (Views: 261.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:37:27 -0700
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 269ms (Views: 263.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-24&commit=Search" for ::1 at 2019-04-23 08:37:31 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-24", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 277ms (Views: 272.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-22&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:37:40 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-22", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 275ms (Views: 267.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-04-23 08:37:43 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_welcome.html.erb (1.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 272ms (Views: 267.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-04-23 08:37:55 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 1076ms (Views: 1043.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:38:01 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 263ms (Views: 256.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-22&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:38:06 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-22", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 266ms (Views: 260.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-21&to=2019-04-22&commit=Search" for ::1 at 2019-04-23 08:38:14 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-21", "to"=>"2019-04-22", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 259ms (Views: 255.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-21&to=2019-04-22&commit=Search" for ::1 at 2019-04-23 08:38:28 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-21", "to"=>"2019-04-22", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 258ms (Views: 253.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=&commit=Search" for ::1 at 2019-04-23 08:38:33 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"", "commit"=>"Search"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 289ms (Views: 282.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:38:38 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 300ms (Views: 295.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:39:06 -0700
+  
+SyntaxError (/Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:37: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/dashboard_controller.rb:37: syntax error, unexpected keyword_end, expecting end-of-input
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (165.8ms)
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:39:12 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 376ms (Views: 320.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:39:25 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (45.4ms)
+  Rendered dashboard/index.html.erb within layouts/application (58.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 390ms (Views: 359.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=&to=&commit=Search" for ::1 at 2019-04-23 08:39:34 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"", "to"=>"", "commit"=>"Search"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 276ms (Views: 267.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-17&commit=Search" for ::1 at 2019-04-23 08:39:42 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-17", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-18 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 285ms (Views: 275.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-08&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:39:51 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-08", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.5ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-07 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (10.5ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 287ms (Views: 277.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:39:59 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (10.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (15.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 303ms (Views: 291.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-08&to=2019-04-09&commit=Search" for ::1 at 2019-04-23 08:40:07 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-08", "to"=>"2019-04-09", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.6ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-07 and created_at <= '2019-04-10 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (6.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 299ms (Views: 288.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-22&to=2019-04-25&commit=Search" for ::1 at 2019-04-23 08:40:17 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-22", "to"=>"2019-04-25", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.5ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-21 and created_at <= '2019-04-26 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 273ms (Views: 261.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-15&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:40:24 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-15", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-14 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (10.2ms)
+  Rendered dashboard/index.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 300ms (Views: 282.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-15&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:41:20 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-15", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-14 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (15.5ms)
+  Rendered dashboard/index.html.erb within layouts/application (24.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 392ms (Views: 358.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=&to=&commit=Search" for ::1 at 2019-04-23 08:41:29 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"", "to"=>"", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 267ms (Views: 261.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=42534-02-05&to=42534-02-05&commit=Search" for ::1 at 2019-04-23 08:41:42 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"42534-02-05", "to"=>"42534-02-05", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 42534-02-04 and created_at <= '42534-02-06 12:00:00 -0800' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 267ms (Views: 257.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=0003-04-06&to=0009-04-07&commit=Search" for ::1 at 2019-04-23 08:41:58 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"0003-04-06", "to"=>"0009-04-07", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 0003-04-05 and created_at <= '0009-04-08 12:00:00 -0752' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 295ms (Views: 282.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:42:08 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (11.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (23.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 314ms (Views: 304.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:42:19 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.5ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (10.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 328ms (Views: 316.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:43:36 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (12.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (18.0ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 380ms (Views: 372.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:43:45 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (11.7ms)
+  Rendered dashboard/index.html.erb within layouts/application (16.7ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 369ms (Views: 362.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-17&commit=Search" for ::1 at 2019-04-23 08:43:54 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-17", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-18 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 336ms (Views: 328.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-17&commit=Search" for ::1 at 2019-04-23 08:49:05 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:4)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-17", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-18 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (529.5ms)
+Completed 500 Internal Server Error in 581ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `display_messages' for #<#<Class:0x00007ff2bfbdb0f0>:0x00007ff2bfbd92f0>):
+    20: 
+    21:   <%# elsif Date.parse(@to).to_s > @last_expense %>
+    22:   <%#= flash[:success] = "Last expense was on #{@last_expense} " %>
+    23:   <% if display_messages %>
+    24:     display_messages
+    25: 
+    26:   <% else %>
+  
+app/views/dashboard/index.html.erb:23:in `_app_views_dashboard_index_html_erb__2653032411079690331_70340287847800'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (153.1ms)
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-17&commit=Search" for ::1 at 2019-04-23 08:50:41 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:4)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-17", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-18 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered layouts/_table.html.erb (0.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 424ms (Views: 387.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-08&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:50:53 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-08", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-07 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (12.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (19.6ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 382ms (Views: 375.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-22&commit=Search" for ::1 at 2019-04-23 08:51:04 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-22", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.6ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-23 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (7.9ms)
+  Rendered dashboard/index.html.erb within layouts/application (13.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 384ms (Views: 375.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-02&commit=Search" for ::1 at 2019-04-23 08:51:13 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-02", "commit"=>"Search"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-03 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered layouts/_table.html.erb (1.3ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 289ms (Views: 281.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-02&commit=Search" for ::1 at 2019-04-23 08:51:46 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-02", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-03 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered layouts/_table.html.erb (0.8ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 271ms (Views: 263.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-02&commit=Search" for ::1 at 2019-04-23 08:52:16 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:4)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-02", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.5ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-03 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 417ms (Views: 375.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-09&commit=Search" for ::1 at 2019-04-23 08:52:30 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-09", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-10 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 274ms (Views: 268.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-09&commit=Search" for ::1 at 2019-04-23 08:52:42 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-09", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-10 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 280ms (Views: 270.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=&to=2019-04-01&commit=Search" for ::1 at 2019-04-23 08:52:51 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"", "to"=>"2019-04-01", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered layouts/_table.html.erb (5.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    14:   <tbody>
+    15: 
+    16: 
+    17:   <% @expenses.each do |expense| %>
+    18:     <tr>
+    19: 
+    20:       <% if expense.user_id == current_user.id %>
+  
+app/views/layouts/_table.html.erb:17:in `_app_views_layouts__table_html_erb__790220803076587442_70340321095600'
+app/views/dashboard/index.html.erb:35:in `_app_views_dashboard_index_html_erb__2653032411079690331_70340326337460'
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/pavlosp1967/.rvm/gems/ruby-2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (162.4ms)
+Started GET "/dashboard?utf8=%E2%9C%93&from=&to=2019-04-01&commit=Search" for ::1 at 2019-04-23 08:53:41 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"", "to"=>"2019-04-01", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 288ms (Views: 283.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-03&commit=Search" for ::1 at 2019-04-23 08:53:47 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-03", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-04 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 281ms (Views: 273.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:53:56 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 278ms (Views: 267.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-22&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:54:06 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-22", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-21 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 280ms (Views: 270.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-22&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:54:27 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:4)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-22", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-21 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 465ms (Views: 425.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-03&commit=Search" for ::1 at 2019-04-23 08:54:33 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-03", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-03-31 and created_at <= '2019-04-04 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 291ms (Views: 283.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=&to=2019-04-16&commit=Search" for ::1 at 2019-04-23 08:54:36 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"", "to"=>"2019-04-16", "commit"=>"Search"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 376ms (Views: 370.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-24&commit=Search" for ::1 at 2019-04-23 08:54:44 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-24", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-25 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 287ms (Views: 275.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:54:50 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 279ms (Views: 270.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:55:34 -0700
+DEPRECATION WARNING: Passing string to define callback is deprecated and will be removed in Rails 5.1 without replacement. (called from <class:DashboardController> at /Users/pavlosp1967/RubymineProjects/tracker-v7/project/app/controllers/dashboard_controller.rb:2)
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (12.9ms)
+  Rendered dashboard/index.html.erb within layouts/application (19.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 400ms (Views: 368.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-17&commit=Search" for ::1 at 2019-04-23 08:55:43 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-17", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-03-31 and created_at <= '2019-04-18 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 296ms (Views: 288.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:55:52 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (10.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 303ms (Views: 293.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:56:23 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (14.9ms)
+  Rendered dashboard/index.html.erb within layouts/application (20.3ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 309ms (Views: 298.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-08&to=2019-04-10&commit=Search" for ::1 at 2019-04-23 08:56:31 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-08", "to"=>"2019-04-10", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.1ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-07 and created_at <= '2019-04-11 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 303ms (Views: 296.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-16&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 08:56:37 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-16", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-15 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (14.5ms)
+  Rendered dashboard/index.html.erb within layouts/application (22.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 313ms (Views: 305.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-07&to=2019-04-19&commit=Search" for ::1 at 2019-04-23 08:56:56 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-07", "to"=>"2019-04-19", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-06 and created_at <= '2019-04-20 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 352ms (Views: 341.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-07&to=2019-04-19&commit=Search" for ::1 at 2019-04-23 08:58:57 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-07", "to"=>"2019-04-19", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-06 and created_at <= '2019-04-20 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 387ms (Views: 378.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-07&to=2019-04-19&commit=Search" for ::1 at 2019-04-23 08:59:37 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-07", "to"=>"2019-04-19", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-06 and created_at <= '2019-04-20 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 386ms (Views: 376.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-07&to=2019-04-19&commit=Search" for ::1 at 2019-04-23 08:59:50 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-07", "to"=>"2019-04-19", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-06 and created_at <= '2019-04-20 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 351ms (Views: 342.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-07&to=2019-04-19&commit=Search" for ::1 at 2019-04-23 09:00:00 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-07", "to"=>"2019-04-19", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-06 and created_at <= '2019-04-20 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 281ms (Views: 272.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-07&to=2019-04-19&commit=Search" for ::1 at 2019-04-23 09:00:06 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-07", "to"=>"2019-04-19", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-06 and created_at <= '2019-04-20 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 271ms (Views: 264.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=&to=&commit=Search" for ::1 at 2019-04-23 09:00:12 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"", "to"=>"", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 276ms (Views: 270.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-15&commit=Search" for ::1 at 2019-04-23 09:00:18 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-15", "commit"=>"Search"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-16 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 270ms (Views: 259.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-23&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 09:00:24 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-23", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-22 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (9.6ms)
+  Rendered dashboard/index.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 293ms (Views: 283.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-02&to=2019-04-01&commit=Search" for ::1 at 2019-04-23 09:00:37 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-02", "to"=>"2019-04-01", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.2ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-04-01 and created_at <= '2019-04-02 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 271ms (Views: 264.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard?utf8=%E2%9C%93&from=2019-04-01&to=2019-04-23&commit=Search" for ::1 at 2019-04-23 09:00:47 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"utf8"=>"✓", "from"=>"2019-04-01", "to"=>"2019-04-23", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mExpense Load (0.4ms)[0m  [1m[34mSELECT  "expenses".* FROM "expenses" ORDER BY "expenses"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mExpense Load (0.3ms)[0m  [1m[34mselect * from expenses where user_id = 83 and created_at >= 2019-03-31 and created_at <= '2019-04-24 12:00:00 -0700' [0m
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  Rendered layouts/_table.html.erb (12.2ms)
+  Rendered dashboard/index.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 297ms (Views: 287.3ms | ActiveRecord: 1.0ms)
+
+

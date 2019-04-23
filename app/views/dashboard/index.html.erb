@@ -2,31 +2,33 @@
 
 
 <div class="modal-body center">
+  <!--   as long as the datepicker works correctly, there is no invalid input -->
+  <%# if !@valid %>
+  <%#= flash[:success] = "Invalid Date Format, please try again " %>
 
-  <% if !@valid %>
-    <%= flash[:success] = "Invalid Date Format, please try again " %>
-
-  <% elsif @from == "" || @to == "" || @from.nil? || @to.nil? %>
+  <% if @from == "" || @to == "" || @from.nil? || @to.nil? %>
     <h2>Enter dates to see your expenses</h2>
 
   <% elsif Date.parse(@from) > Date.parse(@to) %>
-    <%= flash[:success] = "Date `from` must be before `to` " %>
+    <h2> Date `from` must be before `to` </h2>
 
   <% elsif @empty_records %>
-    <%= flash[:success] = "No records on these days, or in one of the days entered" %>
+    <h2> No records on these days </h2>
 
   <% elsif Date.parse(@from) > Date.today %>
-    <%= flash[:success] = "Date `from` must be before today , or today" %>
+    <h2> Date `from` must be before today , or today </h2>
 
-    <%# elsif Date.parse(@to).to_s > @last_expense %>
-    <%#= flash[:success] = "Last expense was on #{@last_expense} " %>
+  <% elsif Date.parse(@to).to_s > @last_expense %>
+    <h2> Last expense was on    <%= "#{@last_expense} " %> </h2>
 
   <% else %>
     <h3>Showing Expenses from <%= @from %> to <%= @to %></h3>
-      <!-- This will load the graph piechart-->
+    <!-- This will load the graph piechart-->
 
-      <canvas id="pie-chart" width="700" height="400"></canvas>
-      <script> window.onload = function() {pieChart(2,1,"customers")};</script>
+    <canvas id="pie-chart" width="700" height="400"></canvas>
+    <script> window.onload = function () {
+        pieChart(2, 1, "customers")
+    };</script>
 
     <%= render 'layouts/table' %>
 
@@ -46,10 +48,10 @@
 
 <script>
     // $(document).on('turbolinks:load', function () {
-      $('.btn').datepicker({
-            format: 'yyyy-mm-dd',
-        }).on('change', function () {
-            $('.datepicker').hide();
-        });
+    $('.btn').datepicker({
+        format: 'yyyy-mm-dd',
+    }).on('change', function () {
+        $('.datepicker').hide();
+    });
     // });
 </script>
