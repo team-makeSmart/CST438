@@ -13,7 +13,7 @@ class DashboardController < ApplicationController
     @from = params['from']
     @to = params['to']
     @last_expense = Expense.first.created_at.strftime("%Y-%m-%d")
-    @expenses = Expense.find_by_sql("select * from expenses where user_id = #{current_user.id} and created_at >= '#{(Date.parse(@from) - 1.day)}' and created_at <= '#{(Date.parse(@to) + 36.hour)}' ")
+    @expenses = Expense.find_by_sql("select * from expenses where user_id = #{current_user.id} and created_at >= '#{(Date.parse(@from)+7.hour )}' and created_at <= '#{(Date.parse(@to)+ 24.hour )}' ")
     @empty_records = @expenses == []
   end
 
