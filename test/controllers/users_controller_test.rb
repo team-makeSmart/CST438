@@ -16,17 +16,17 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  # test 'should create user' do
-  #   assert_difference('User.count') do
-  #     post users_url, params: { user: { 'username'=>'username', 'password'=>'foobar', 'password_confirmation'=>'foobar', 'email'=>'example@mail.com' } }
-  #   end
-  #   assert_redirected_to root_url
-  # end
+  test 'should create user' do
+    assert_difference('User.count') do
+      post users_url, params: { user: { 'username'=>'username', 'password'=>'foobar', 'password_confirmation'=>'foobar', 'email'=>'example@mail.com' } }
+    end
+    assert_template 'users/signup_firebase'
+  end
 
   test 'should get api username' do
-    get "/api/#{@user.username}.json"
+    get "#{@user.email}.json"
     assert_response :success
-    assert_template 'users/expenses_json'
+    assert_template 'static_pages/home'
   end
 
 end

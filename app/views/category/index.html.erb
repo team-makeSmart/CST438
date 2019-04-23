@@ -1,0 +1,16 @@
+<% provide(:title, "Expenses by Category") %>
+
+
+
+<%= render 'layouts/table' %>
+<hr>
+<div class="wrapper">
+  <h1>Select Category</h1>
+  <%= bootstrap_form_tag url: 'index' ,method: "get" do |f| %>
+    <%= f.select :category ,@list,
+                 { label: "Choose Category:"} %>
+    <%= f.submit 'Search', class: "btn btn-primary"
+         %>
+  <% end %>
+</div>
+

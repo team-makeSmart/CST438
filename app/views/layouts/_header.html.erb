@@ -3,16 +3,15 @@
     <%= link_to "Expense Tracker", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to " Home", root_path, class: "fas fa-home" %></li>
 
         <% if !logged_in? %>
-        <li><%= link_to "Sign Up", signup_path %></li>
-        <li><%=  link_to "Log in", login_path  %></li>
+        <li><%= link_to " Sign Up ", signup_path, class: "fas fa-user-plus" %></li>
+        <li><%=  link_to " Log in ", login_path , class: "fas fa-sign-in-alt" %></li>
         <%  else  %>
-          <li><%= link_to "Log out", logout_path, method: :delete %></li>
+          <li ><%= link_to " Log out ", logout_path, method: :delete, class: 'fas fa-sign-out-alt'%></li>
           <li><a href="#" class="btn btn-lg disabled text-white" aria-disabled="true"><%= "Hi #{current_user.email} !" %></a></li>
         <% end %>
-
 
       </ul>
     </nav>

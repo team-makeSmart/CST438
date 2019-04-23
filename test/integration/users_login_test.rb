@@ -26,6 +26,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     assert_template 'layouts/_shim'
     assert_template 'layouts/_header'
     assert_template 'layouts/application'
+    assert_template '_welcome'
 
     assert_select "a[href=?]", login_path, count: 0
     assert_select "a[href=?]", root_path, count: 2
