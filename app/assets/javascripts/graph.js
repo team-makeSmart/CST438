@@ -14,7 +14,8 @@ param categoryColNum : This is the column number of the category
 param amountColNum : This is the column number of a currency amount in text form with a $ in front
     Note that the the $ sign will be sliced off and the amount converted from text to float
 param tableId : This is the tableId of the HTML table where the data comes from
-*/  
+*/
+
 function pieChart(categoryColNum, amountColNum, tableId){
 
     var i, j;   //iterators for for-loops
